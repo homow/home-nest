@@ -9,11 +9,19 @@
 @theme {
     /* fonts */
     --font-dana: "dana", serif;
+
+    --color-primary-bg: #fff;
+    --color-primary-txt: var(--color-slate-900);
+}
+
+.dark {
+    --color-primary-bg: oklch(12.9% 0.042 264.695);
+    --color-primary-txt: var(--color-slate-50);
 }
 
 @layer base {
     body {
-        @apply font-dana font-normal text-base tracking-wide dark:bg-gray-900 dark:text-gray-100;
+        @apply font-dana font-normal text-base tracking-wide bg-primary-bg text-primary-txt;
     }
     h1 {
         @apply text-5xl font-bold;
