@@ -1,6 +1,6 @@
 export default function HeaderNav() {
     return (
-        <div className={"container"}>
+        <div>
             <h1>Header Nav</h1>
         </div>
     )

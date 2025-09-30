@@ -2,6 +2,8 @@ import FooterNav from "./FooterNav";
 
 export default function Footer() {
     return (
-        <FooterNav/>
+        <footer className="container">
+            <FooterNav/>
+        </footer>
     )
 }

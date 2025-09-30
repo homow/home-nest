@@ -2,6 +2,8 @@ import HeaderNav from "./HeaderNav.jsx";
 
 export default function Header() {
     return (
-        <HeaderNav/>
+        <header className="container">
+            <HeaderNav/>
+        </header>
     )
 }
