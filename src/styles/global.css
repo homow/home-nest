@@ -10,13 +10,20 @@
     /* fonts */
     --font-dana: "dana", serif;
 
+    /* colors */
     --color-primary-bg: #fff;
     --color-primary-txt: var(--color-slate-900);
+    --color-header-bg: #1E1E1E;
+    --color-gery-10: #1A1A1A;
+    --color-gery-15: var(--color-neutral-800);
 }
 
 .dark {
-    --color-primary-bg: oklch(12.9% 0.042 264.695);
+    --color-primary-bg: var(--color-zinc-900);
     --color-primary-txt: var(--color-slate-50);
+    --color-header-bg: #1E1E1E;
+    --color-gery-10: #1A1A1A;
+    --color-gery-15: #262626;
 }
 
 @layer base {
