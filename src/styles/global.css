@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @utility container {
-    @apply mx-auto;
+    @apply mx-auto max-w-349 px-4;
 }
 
 @theme {
@@ -35,13 +35,13 @@
         @apply font-dana font-normal text-base tracking-wide bg-primary-bg text-primary-txt;
     }
     h1 {
-        @apply text-5xl font-bold;
+        @apply text-3xl md:text-5xl xl:text-6xl font-bold;
     }
     h2 {
-        @apply text-3xl font-bold;
+        @apply text-2xl md:text-4xl lg:text-5xl font-bold;
     }
     h3 {
-        @apply text-2xl font-bold;
+        @apply text-xl md:text-2xl lg:text-3xl font-bold;
     }
     a {
         @apply font-medium hover:opacity-70 transition-all;
