@@ -16,8 +16,8 @@
 
     /* you should changes below colors in light theme */
     --color-header-bg: #1E1E1E;
-    --color-gery-10: #1A1A1A;
-    --color-gery-15: var(--color-neutral-800);
+    --color-grey-10: #1A1A1A;
+    --color-grey-15: var(--color-neutral-800);
     --color-grey-60: var(--color-neutral-400);
 }
 
@@ -25,8 +25,8 @@
     --color-primary-bg: var(--color-zinc-900);
     --color-primary-txt: var(--color-slate-50);
     --color-header-bg: #1E1E1E;
-    --color-gery-10: #1A1A1A;
-    --color-gery-15: #262626;
+    --color-grey-10: #1A1A1A;
+    --color-grey-15: #262626;
     --color-grey-60: var(--color-neutral-400);
 }
 
