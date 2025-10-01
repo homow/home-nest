@@ -47,3 +47,12 @@
         @apply font-medium hover:opacity-70 transition-all;
     }
 }
+
+@layer components {
+    .primary-btn {
+        @apply rounded-lg px-3 py-2.5 bg-violet-600 cursor-pointer hover:opacity-85 transition-all;
+    }
+    .secondary-btn {
+        @apply rounded-lg px-3 py-2.5 border bg-grey-10 border-grey-15 cursor-pointer hover:opacity-75 transition-all;
+    }
+}
