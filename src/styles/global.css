@@ -21,9 +21,10 @@
     --color-grey-15: var(--color-neutral-300);
     --color-glass: rgba(0, 0, 0, .18);
     --color-grey-10: var(--color-gray-200);
+    --color-header-bg: var(--color-gray-100);
+    --color-dark-blue-15: var(--color-violet-200);
 
     /* you should changes below colors in light theme */
-    --color-header-bg: #1E1E1E;
     --color-grey-60: var(--color-neutral-400);
 }
 
@@ -35,10 +36,11 @@
     --color-grey-15: #262626;
     --color-grey-60: var(--color-neutral-400);
     --color-glass: rgba(255, 255, 255, .1);
+    --color-dark-blue-15: #211E2F;
 }
 
 @utility nav-mobile {
-    @apply fixed w-40 flex-col bg-grey-10 bottom-0 top-0 pt-8 transition-all duration-200;
+    @apply fixed z-20 w-40 flex-col bg-grey-10 bottom-0 top-0 pt-8 transition-all duration-200;
 }
 
 @layer base {
