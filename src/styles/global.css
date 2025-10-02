@@ -3,10 +3,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @utility container {
-    @apply mx-auto max-w-349 px-4;
+    @apply mx-auto 2xl:max-w-407 px-4;
 }
 
 @theme {
+    --breakpoint-xx: 21rem;
+    --breakpoint-xs: 24.375rem;
+    --breakpoint-sm: 36rem;
+    --breakpoint-2xl: 90rem;
+
     /* fonts */
     --font-dana: "dana", serif;
 
