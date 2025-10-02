@@ -1,5 +1,7 @@
 export default function HeaderBase() {
     return (
-        <div>Index</div>
+        <div>
+
+        </div>
     )
 }

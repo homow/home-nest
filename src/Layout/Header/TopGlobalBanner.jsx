@@ -1,6 +1,6 @@
 export default function TopGlobalBanner() {
     return (
-        <div className={"hidden xx:block relative overflow-hidden pt-10 pb-5 text-xs xs:text-sm sm:text-base sm:py-3.5"}>
+        <div className={"hidden xx:block relative overflow-hidden pt-10 pb-5 text-xs border-grey-15 border-b xs:text-sm sm:text-base sm:py-3.5"}>
             <span className={"absolute -z-10 inset-0 -left-237 sm:left-0 opacity-40"}>
                 <svg className={"w-full"}>
                     <use href="#waveField-icon"></use>
