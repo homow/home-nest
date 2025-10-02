@@ -1,5 +1,5 @@
 import TopGlobalBanner from "./TopGlobalBanner.jsx";
-import HeaderBase from "./HeaderBase";
+import HeaderBase from "./HeaderBase/HeaderBase.jsx";
 
 export default function Header() {
     return (
