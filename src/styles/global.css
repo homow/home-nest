@@ -22,7 +22,7 @@
     /* you should changes below colors in light theme */
     --color-header-bg: #1E1E1E;
     --color-grey-10: #1A1A1A;
-    --color-grey-15: var(--color-neutral-800);
+    --color-grey-15: var(--color-neutral-300);
     --color-grey-60: var(--color-neutral-400);
 }
 
