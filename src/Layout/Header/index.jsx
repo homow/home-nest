@@ -1,9 +1,11 @@
-import TopGlobalBanner from "@/Layout/Header/TopGlobalBanner.jsx";
+import TopGlobalBanner from "./TopGlobalBanner.jsx";
+import HeaderBase from "./HeaderBase";
 
 export default function Header() {
     return (
-        <header className="">
+        <header>
             <TopGlobalBanner/>
+            <HeaderBase/>
         </header>
     )
 }
