@@ -9,7 +9,7 @@ export default function HeaderBase() {
     return (
         <>
             <Overlay flag={isOpenMenu} setFlag={setIsOpenMenu}/>
-            <div className={"bg-header-bg border-b border-dark-blue-15"}>
+            <div className={`bg-header-bg border-b border-dark-blue-15 transition-all duration-300`}>
                 <nav className={"container py-5 flex flex-row items-center justify-between"}>
                     <div className={"hidden md:block"}>
                         .Logo

@@ -38,7 +38,7 @@
 }
 
 @utility nav-mobile {
-    @apply fixed z-20 w-40 flex-col bg-grey-10 bottom-0 top-0 pt-8 transition-all duration-200;
+    @apply fixed z-30 w-40 flex-col bg-grey-10 bottom-0 top-0 pt-8 transition-all duration-200;
 }
 
 @layer base {
@@ -46,7 +46,7 @@
         @apply font-dana font-normal text-base tracking-wide bg-primary-bg text-primary-txt;
     }
     h1 {
-        @apply text-3xl md:text-5xl xl:text-6xl font-bold;
+        @apply text-3xl md:text-5xl xl:text-6xl font-bold leading-[140%];
     }
     h2 {
         @apply text-2xl md:text-4xl lg:text-5xl font-bold;
@@ -61,7 +61,7 @@
 
 @layer components {
     .primary-btn {
-        @apply rounded-lg px-3 py-2.5 bg-violet-600 cursor-pointer hover:opacity-85 transition-all;
+        @apply rounded-lg px-3 py-2.5 bg-violet-600 text-white cursor-pointer hover:opacity-85 transition-all;
     }
     .secondary-btn {
         @apply rounded-lg px-3 py-2.5 border bg-grey-10 border-grey-15 cursor-pointer hover:opacity-75 transition-all;
