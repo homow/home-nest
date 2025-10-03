@@ -4,9 +4,10 @@ export default function ThemeSection() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") === "dark" ? "dark" : "light");
 
     const changeTheme = () => {
-        setTheme(prevState => prevState === "dark" ? "light" : "dark");
-        document.documentElement.classList.toggle("dark", theme === "dark");
-        localStorage.setItem("theme", theme);
+        const newTheme = theme === "dark" ? "light" : "dark";
+        setTheme(newTheme);
+        document.documentElement.classList.toggle("dark", newTheme === "dark");
+        localStorage.setItem("theme", newTheme);
     }
 
     return (
