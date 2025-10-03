@@ -11,7 +11,12 @@ export default function HeaderBase() {
             <Overlay flag={isOpenMenu} setFlag={setIsOpenMenu}/>
             <div className={"bg-header-bg border-b border-dark-blue-15"}>
                 <nav className={"container py-5 flex flex-row items-center justify-between"}>
+                    <div className={"hidden md:block"}>
+                        .Logo
+                    </div>
+                    {/* Header Navigation */}
                     <HeaderNav openMenu={isOpenMenu} setOpenMenu={setIsOpenMenu}/>
+                    {/* theme icon and control */}
                     <ThemeSection/>
                     {/* toggle nav menu in mobile */}
                     <span
