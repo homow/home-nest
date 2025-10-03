@@ -20,11 +20,9 @@
     --color-primary-txt: var(--color-slate-900);
     --color-grey-15: var(--color-neutral-300);
     --color-glass: rgba(0, 0, 0, .18);
-    --color-grey-10: var(--color-gray-200);
     --color-header-bg: var(--color-gray-100);
+    --color-grey-10: var(--color-gray-200);
     --color-dark-blue-15: var(--color-violet-200);
-
-    /* you should changes below colors in light theme */
     --color-grey-60: var(--color-neutral-400);
 }
 

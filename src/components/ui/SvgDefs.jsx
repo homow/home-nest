@@ -1,5 +1,6 @@
 export default function SvgDefs() {
     return (
+        // region SvgDefs Logic
         <svg className={"hidden"}>
             {/* <=== header ===> */}
             {/* close */}
@@ -317,5 +318,6 @@ export default function SvgDefs() {
                 <path d="M128.15 139.133L126.87 140.2L122.819 128.922L124.093 127.86L125.453 131.612L132.327 135.649L131.019 136.74L126.223 133.754L128.15 139.133Z" fill="white"/>
             </symbol>
         </svg>
+        // endregion
     )
 }

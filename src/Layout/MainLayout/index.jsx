@@ -2,7 +2,7 @@ import AppRoutes from "@/routes/AppRoutes.jsx";
 
 export default function MainLayout() {
     return (
-        <main className="container">
+        <main className={"mt-10"}>
             <AppRoutes/>
         </main>
     )
