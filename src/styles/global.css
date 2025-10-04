@@ -73,9 +73,9 @@
         @apply relative before:block before:bg-inherit before:border-b before:border-inherit before:absolute before:bottom-[2px] before:w-full;
     }
     .primary-btn {
-        @apply rounded-lg px-3 py-2.5 bg-violet-600 text-white cursor-pointer hover:opacity-85 transition-all text-sm lg:text-base xl:px-5 xl:py-3.5 2xl:px-6 2xl:py-3;
+        @apply rounded-lg px-3 py-2 bg-violet-600 text-white cursor-pointer hover:opacity-85 transition-all text-sm lg:text-base xl:px-5 xl:py-3.5 2xl:px-6 2xl:py-3;
     }
     .secondary-btn {
-        @apply rounded-lg px-3 py-2.5 border bg-grey-10 border-grey-15 cursor-pointer hover:opacity-75 transition-all text-sm lg:text-base xl:px-5 xl:py-3.5 2xl:px-6 2xl:py-3;
+        @apply rounded-lg px-3 py-2 border bg-grey-10 border-grey-15 cursor-pointer hover:opacity-75 transition-all text-sm lg:text-base xl:px-5 xl:py-3.5 2xl:px-6 2xl:py-3;
     }
 }

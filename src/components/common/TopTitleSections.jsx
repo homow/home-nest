@@ -10,7 +10,7 @@ export default function TopTitleSections({title, text, link = null, linkText}) {
             </span>
             <h2>{title}</h2>
             {link ? (
-                <div className={"lg:flex items-start justify-between gap-4"}>
+                <div className={"relative lg:flex items-start justify-between gap-4"}>
                     <p className={"text-sm text-grey-60"}>{text}</p>
                     <Link className={"secondary-btn hidden lg:inline"} to={link}>{linkText}</Link>
                 </div>
