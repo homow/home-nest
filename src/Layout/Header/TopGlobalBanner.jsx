@@ -22,7 +22,7 @@ export default function TopGlobalBanner() {
             <div className={"container relative text-sm sm:text-base"}>
                 <div className={"flex flex-row items-center justify-end md:justify-center gap-2 sm:gap-4"}>
                     <p>✨ خانه‌ٔ رویایی‌تو با آشیانه بساز</p>
-                    <a target="_blank" href="https://homow.ir" className="relative before:block before:bg-inherit before:border-b before:border-inherit before:absolute before:bottom-0.5 before:w-full">جزئیات</a>
+                    <a target="_blank" href="https://homow.ir" className="underline-link">جزئیات</a>
                 </div>
                 <span
                     onClick={() => {
