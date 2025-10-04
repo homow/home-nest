@@ -1,6 +1,6 @@
 function BottomHeroSectionBox({text, icon}) {
     return (
-        <div className={"relative bg-grey-10 rounded-custom border border-grey-15 text-center flex flex-col items-center py-5 px-3.5 text-sm md:text-base"}>
+        <div className={"relative bg-grey-10 rounded-custom border border-grey-15 text-center flex flex-col items-center py-5 px-3.5 text-sm md:text-base md:py-6 lg:py-7"}>
             <span className={"absolute right-4 top-4"}>
                 <svg className={"size-6 text-grey-30"}>
                     <use href="#longArrow-icon"></use>

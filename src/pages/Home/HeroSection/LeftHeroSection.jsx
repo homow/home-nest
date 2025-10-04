@@ -4,7 +4,7 @@ function LeftHeroSectionState({title, text, className = ""}) {
     return (
         <div className={`bg-grey-10 border border-grey-15 rounded-lg p-4 text-center sm:max-w-60 sm:text-start ${className}`}>
             <strong className={"text-2xl xl:text-3xl"}>{title}</strong>
-            <p className={"text-grey-60 text-sm xl:text-base"}>{text}</p>
+            <p className={"text-grey-60 text-sm xl:text-base md:mt-1"}>{text}</p>
         </div>
     )
 }
