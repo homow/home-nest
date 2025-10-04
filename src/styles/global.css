@@ -32,6 +32,9 @@
     /* border radius */
     --radius-custom: 10px;
     --radius-custom-28: 28px;
+
+    /* custom size */
+    /*--size-30: 30px;*/
 }
 
 .dark {
