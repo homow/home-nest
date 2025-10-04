@@ -1,25 +1,25 @@
 import {Link} from "react-router-dom";
 
-function LeftHeroSectionState({title, text}) {
+function LeftHeroSectionState({title, text, className = ""}) {
     return (
-        <div className={"bg-grey-10 border border-grey-15 rounded-lg p-4"}>
-            <strong className={"text-2xl"}>{title}</strong>
-            <p className={"text-grey-60 text-sm"}>{text}</p>
+        <div className={`bg-grey-10 border border-grey-15 rounded-lg p-4 text-center sm:max-w-60 sm:text-start ${className}`}>
+            <strong className={"text-2xl xl:text-3xl 2xl:text-[2.5rem]"}>{title}</strong>
+            <p className={"text-grey-60 text-sm xl:text-base 2xl:text-lg"}>{text}</p>
         </div>
     )
 }
 
 function LeftHeroSectionInfo() {
     return (
-        <div className={"mb-10"}>
-            <h1 className={"font-medium max-w-4/5"}>
-                با آشیانه، خانهٔ های رویایی‌تو سریع پیدا کن
+        <div className={"mb-10 xl:mb-15"}>
+            <h1 className={"font-medium max-w-8/12 sm:max-w-6/12 md:max-w-6/12 xl:max-w-125"}>
+                با آشیانه، رویاهات رو سریع تر پیدا کن
             </h1>
-            <p className={"text-sm text-grey-60 mt-4 mb-10"}>
+            <p className={"text-sm text-grey-60 mt-4 mb-10 sm:max-w-8/12 md:text-base md:max-w-7/12 lg:max-w-5/12 xl:max-w-120 xl:mb-14 xl:mt-6"}>
                 سفرِ پیدا کردن خونه رویایی‌ت از همین‌جا شروع میشه.
                 آگهی‌هامون رو بگرد، اون خونه‌ای که تو رویات دیدی رو پیدا کن.
             </p>
-            <div className={"space-y-4"}>
+            <div className={"space-y-4 sm:flex flex-row items-center sm:space-y-0 gap-4"}>
                 <Link className={"primary-btn block text-center"} to="/properties">دیدن خانه ها</Link>
                 <a className={"secondary-btn block text-center"} target={"_blank"} href="https://card.homow.ir">اطلاعات بیشتر</a>
             </div>
@@ -27,17 +27,17 @@ function LeftHeroSectionInfo() {
     )
 }
 
-export default function LeftHeroSection() {
+export default function LeftHeroSection({className}) {
     return (
-        <div className={"container"}>
+        <div className={`container xl:ml-20 2xl:ml-40 ${className}`}>
             {/* info and title */}
             <LeftHeroSectionInfo/>
 
             {/* state box hero section */}
-            <div>
-                <LeftHeroSectionState title={"+200"} text={"مشتری های راضی"}/>
-                <LeftHeroSectionState title={"10هزار"} text={"خانه براش مشتری ها"}/>
-                <LeftHeroSectionState title={"+16"} text={"سال سابقه"}/>
+            <div className={"grid grid-cols-2 gap-2 sm:flex xl:gap-5"}>
+                <LeftHeroSectionState className={"w-full"} title={"+200"} text={"مشتری های راضی"}/>
+                <LeftHeroSectionState className={"w-full"} title={"10هزار"} text={"خانه برای مشتری ها"}/>
+                <LeftHeroSectionState title={"+16"} text={"سال سابقه"} className={"col-span-2 sm:col-span-1 w-full"}/>
             </div>
         </div>
     )
