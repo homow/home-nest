@@ -8,8 +8,7 @@ export default function RightHeroSection() {
                         <use href="#waveField-icon"></use>
                     </svg>
                 </span>
-
-                <img className={"w-full relative z-10"} src="/static/img/home/hero-section-img.webp" alt="Building Hero section Images"/>
+                <img className={"w-full relative z-10"} src="https://xbeopbkmgpzwzhtijiir.supabase.co/storage/v1/object/public/static-assets/ui/home/hero-section-img.webp" alt="Building Hero section Images"/>
             </div>
 
             {/* circle svg */}
