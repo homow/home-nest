@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 function LeftHeroSectionState({title, text, className = ""}) {
     return (
         <div className={`bg-grey-10 border border-grey-15 rounded-lg p-4 text-center sm:max-w-60 sm:text-start ${className}`}>
-            <strong className={"text-2xl xl:text-3xl 2xl:text-[2.5rem]"}>{title}</strong>
-            <p className={"text-grey-60 text-sm xl:text-base 2xl:text-lg"}>{text}</p>
+            <strong className={"text-2xl xl:text-3xl"}>{title}</strong>
+            <p className={"text-grey-60 text-sm xl:text-base"}>{text}</p>
         </div>
     )
 }
@@ -12,7 +12,7 @@ function LeftHeroSectionState({title, text, className = ""}) {
 function LeftHeroSectionInfo() {
     return (
         <div className={"mb-10 xl:mb-15"}>
-            <h1 className={"font-medium max-w-8/12 sm:max-w-6/12 md:max-w-6/12 xl:max-w-125"}>
+            <h1 className={"font-medium max-w-10/12 xs:max-w-8/12 sm:max-w-6/12 md:max-w-6/12 xl:max-w-125"}>
                 با آشیانه، رویاهات رو سریع تر پیدا کن
             </h1>
             <p className={"text-sm text-grey-60 mt-4 mb-10 sm:max-w-8/12 md:text-base md:max-w-7/12 lg:max-w-5/12 xl:max-w-120 xl:mb-14 xl:mt-6"}>
