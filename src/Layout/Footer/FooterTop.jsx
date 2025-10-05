@@ -1,9 +1,9 @@
 import {Link} from "react-router-dom";
 
-function GrowSpineIcon({className, childClassName}) {
+function GrowSpineIcon({className}) {
     return (
         <span className={`-z-10 inline-block max-w-max absolute ${className}`}>
-            <svg className={`text-white opacity-3 w-72 ${childClassName}`}>
+            <svg className={`text-white opacity-3 w-72`}>
                 <use href="#growthSpine-icon"></use>
             </svg>
         </span>
