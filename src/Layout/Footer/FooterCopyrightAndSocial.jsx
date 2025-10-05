@@ -26,7 +26,7 @@ export default function FooterCopyrightAndSocial() {
         <div className={"bg-grey-10 py-10"}>
             <div className={"container space-y-5 md:flex flex-row justify-between"}>
                 {/* footer copy right */}
-                <div className={"flex flex-row items-center justify-center"}>
+                <div className={"flex flex-row items-center justify-center gap-2"}>
                     <FooterSocialMedia link={"https://github.com/homow"} icon={"github-icon"}/>
                     <FooterSocialMedia link={"https://www.youtube.com/@homow_dev"} icon={"youtube-icon"}/>
                     <FooterSocialMedia link={"https://homow.ir/"} icon={"website-icon"}/>
