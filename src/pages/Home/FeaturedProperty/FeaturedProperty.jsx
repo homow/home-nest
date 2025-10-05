@@ -5,26 +5,34 @@ import {Link} from "react-router-dom";
 function PaginationPropertyCards() {
     return (
         <div className={"flex flex-row items-center justify-between border-t border-grey-15 mt-7.5 pt-4"}>
-            <div className={"flex flex-row items-center gap-1"}>
-                <span className={"inline-block p-2.5 bg-grey-10 rounded-full border border-grey-15 opacity-50"}>
+
+            {/* link */}
+            <Link className={"secondary-btn lg:hidden"} to={"#"}>دیدن همه</Link>
+            <div className={"text-grey-60 hidden lg:block"}>
+                <span>60 </span>
+                از
+                <span className={"text-primary-txt"}> 01</span>
+            </div>
+
+            <div className={"flex flex-row items-center gap-1.5"}>
+                <span className={"inline-block p-1 bg-grey-10 rounded-full border border-grey-15 opacity-50"}>
                     <svg className={"size-5"}>
                         <use href="#rightArrow-icon"></use>
                     </svg>
                 </span>
 
-                <div className={"text-grey-60"}>
+                <div className={"text-grey-60 lg:hidden"}>
                     <span>60 </span>
                     از
                     <span className={"text-primary-txt"}> 01</span>
                 </div>
 
-                <span className={"inline-block p-2.5 bg-grey-10 rounded-full border border-grey-15"}>
+                <span className={"inline-block p-1 bg-grey-10 rounded-full border border-grey-15"}>
                     <svg className={"size-5"}>
                         <use href="#leftArrow-icon"></use>
                     </svg>
                 </span>
             </div>
-            <Link className={"secondary-btn"} to={"#"}>دیدن همه</Link>
         </div>
     )
 }
