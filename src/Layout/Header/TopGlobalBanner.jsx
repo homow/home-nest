@@ -29,7 +29,7 @@ export default function TopGlobalBanner() {
                         setVisible(false)
                         localStorage.setItem("topGlobalBannerVisible", "false")
                     }}
-                    className={"absolute right-4 top-1/2 -translate-y-1/2 inline-block bg-glass backdrop-blur-sm p-1 rounded-full cursor-pointer"}>
+                    className={"absolute right-4 top-1/2 -translate-y-1/2 bg-glass backdrop-blur-sm rounded-full cursor-pointer p-1"}>
                     <svg className={"size-4 sm:size-5"}>
                         <use href="#close-icon"></use>
                     </svg>
