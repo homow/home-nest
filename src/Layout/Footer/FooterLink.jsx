@@ -2,38 +2,49 @@ import {Link} from "react-router-dom";
 
 function FooterLinkBox({linkData}) {
     return (
-        <ul>
+        <div>
             <h6 className={"text-grey-60 mb-1 md:text-lg"}>{linkData.title}</h6>
-            {linkData.links && linkData.links.map(link =>
-                <li key={link.title} className={"*:text-sm *:font-normal md:*:text-base"}>
-                    {link.tagName === "Link" ? (
-                        <Link to={link.url}>{link.text}</Link>
-                    ) : (
+            <ul className={"flex flex-col gap-0.5 md:gap-1"}>
+                {linkData.links && linkData.links.map(link =>
+                    <li key={link.title} className={"*:text-sm *:font-normal md:*:text-base"}>
+                        {link.tagName === "Link" ? (
+                            <Link to={link.url}>{link.text}</Link>
+                        ) : (
 
-                        <a target="_blank" href={link.url}>{link.text}</a>
-                    )}
-                </li>
-            )}
-        </ul>
+                            <a target="_blank" href={link.url}>{link.text}</a>
+                        )}
+                    </li>
+                )}
+            </ul>
+        </div>
     )
 }
 
 function FooterLinkInput() {
     return (
-        <form onSubmit={e => e.preventDefault()}>
-            <label dir="ltr" className={"flex flex-row items-center gap-2 border border-grey-15 rounded-xl pr-2"}>
+        <div>
+            <div className={"flex flex-row items-center gap-1 mb-3"}>
+                .Logo
+                <h5>آشیانه</h5>
+            </div>
+            <form
+                onSubmit={e => e.preventDefault()}
+                className={"xl:min-w-80"}
+            >
+                <label dir="ltr" className={"flex flex-row items-center gap-2 border border-grey-15 rounded-xl pr-2"}>
 
-                {/* input */}
-                <input type="text" name="email" placeholder="ایمیل" autoComplete="email" className={"flex-1 w-full outline-none  pl-5 py-3 rounded-l-lg"}/>
+                    {/* input */}
+                    <input type="text" name="email" placeholder="ایمیل" autoComplete="email" className={"flex-1 w-full outline-none  pl-5 py-3 rounded-l-lg"}/>
 
-                {/* send icon */}
-                <span className={"inline-block max-w-max"}>
-                    <svg className={"size-6"}>
-                        <use href="#send-icon"></use>
-                    </svg>
-                </span>
-            </label>
-        </form>
+                    {/* send icon */}
+                    <span className={"inline-block max-w-max"}>
+                        <svg className={"size-6"}>
+                            <use href="#send-icon"></use>
+                        </svg>
+                    </span>
+                </label>
+            </form>
+        </div>
     )
 }
 
@@ -72,10 +83,10 @@ export default function FooterLinks() {
     ]
 
     return (
-        <div className={"container space-y-12"}>
+        <div className={"container space-y-12 xl:flex flex-row-reverse items-start justify-between"}>
             <FooterLinkInput/>
 
-            <div className={"grid grid-cols-2 gap-x-4 gap-y-10"}>
+            <div className={"grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-4 xl:gap-20"}>
                 {footerLinkData && (
                     footerLinkData.map(link =>
                         <FooterLinkBox key={link.title} linkData={link}/>
