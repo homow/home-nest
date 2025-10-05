@@ -12,7 +12,7 @@ export default function TopGlobalBanner() {
     if (!visible) return null;
 
     return (
-        <div id="TopGlobalBanner" className={"relative overflow-hidden pt-10 pb-5 border-grey-15 border-b sm:py-3.5"}>
+        <div id="TopGlobalBanner" className={"relative overflow-hidden pt-10 pb-5 border-grey-15 border-b md:py-3.5"}>
             <span className={"absolute -z-10 inset-0 -left-237 sm:left-0 opacity-20 dark:opacity-40"}>
                 <svg className={"w-full"}>
                     <use href="#waveField-icon"></use>

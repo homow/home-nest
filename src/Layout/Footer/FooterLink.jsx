@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Logo from "@/components/ui/Logo.jsx";
 
 function FooterLinkBox({linkData}) {
     return (
@@ -23,9 +24,9 @@ function FooterLinkBox({linkData}) {
 function FooterLinkInput() {
     return (
         <div>
-            <div className={"flex flex-row items-center gap-1 mb-3"}>
-                .Logo
-                <h5>آشیانه</h5>
+            <div className={"flex flex-row items-center gap-2 mb-3"}>
+                <Logo className={"max-w-10"}/>
+                <h5 className={"text-lg"}>آشیانه</h5>
             </div>
             <form
                 onSubmit={e => e.preventDefault()}

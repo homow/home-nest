@@ -1,4 +1,5 @@
 import {NavLink} from "react-router-dom";
+import Logo from "@/components/ui/Logo.jsx";
 
 export default function HeaderNav({openMenu, setOpenMenu}) {
     // close menu after click to menu links
@@ -10,8 +11,7 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
         <ul className={`flex items-start max-md:nav-mobile md:gap-4 ${openMenu ? "right-0" : "-right-41"}`}>
             <li
                 className={"md:hidden w-full cursor-pointer hover:opacity-100 md:max-w-max text-center mb-5"}>
-
-                <a href="">Logo.</a>
+                <Logo className={"max-w-10"}/>
             </li>
             <li
                 onClick={handleCloseMenu}
