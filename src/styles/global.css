@@ -23,7 +23,7 @@
     --color-header-bg: var(--color-gray-100);
     --color-grey-10: var(--color-gray-200);
     --color-dark-blue-15: var(--color-violet-200);
-    --color-grey-60: var(--color-neutral-400);
+    --color-grey-60: var(--color-neutral-500);
     --color-grey-30: var(--color-zinc-400);
 
     /* box shadow */
@@ -32,9 +32,6 @@
     /* border radius */
     --radius-custom: 10px;
     --radius-custom-28: 28px;
-
-    /* custom size */
-    /*--size-30: 30px;*/
 }
 
 .dark {

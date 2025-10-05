@@ -3,7 +3,7 @@ import FooterTop from "./FooterTop.jsx";
 
 export default function Footer() {
     return (
-        <footer className="mt-18">
+        <footer className="mt-18 space-y-12">
             <FooterTop/>
             <FooterLink/>
         </footer>
