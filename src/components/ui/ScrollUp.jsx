@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 
 export default function ScrollUp({triggerRef}) {
-    console.log(triggerRef.current);
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
