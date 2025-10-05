@@ -1,9 +1,10 @@
-import FooterNav from "./FooterNav";
+import FooterLink from "./FooterLink.jsx";
 
 export default function Footer() {
     return (
         <footer className="container">
-            <FooterNav/>
+
+            <FooterLink/>
         </footer>
     )
 }

@@ -10,9 +10,11 @@ export default function PropertyCard({img, title, description, features, price, 
 
             {/* info card */}
             <div>
-                <Link to={propertyLink} className={"text-lg font-medium hover:opacity-100"}>
-                    {title}
-                </Link>
+                <h3>
+                    <Link to={propertyLink} className={"hover:opacity-100"}>
+                        {title}
+                    </Link>
+                </h3>
                 <p className={"min-h-10 relative mt-1 text-grey-60 text-sm line-clamp-2"}>
                     {description}
                 </p>

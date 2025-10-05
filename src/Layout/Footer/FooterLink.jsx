@@ -1,4 +1,4 @@
-export default function FooterNav() {
+export default function FooterLinks() {
     return (
         <div>
 
