@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 function FooterLinkBox({linkData}) {
     return (
         <ul>
-            <h6 className={"text-grey-60"}>{linkData.title}</h6>
+            <h6 className={"text-grey-60 mb-1 md:text-lg"}>{linkData.title}</h6>
             {linkData.links && linkData.links.map(link =>
-                <li key={link.title} className={"*:text-sm *:font-normal"}>
+                <li key={link.title} className={"*:text-sm *:font-normal md:*:text-base"}>
                     {link.tagName === "Link" ? (
                         <Link to={link.url}>{link.text}</Link>
                     ) : (
@@ -75,7 +75,7 @@ export default function FooterLinks() {
         <div className={"container space-y-12"}>
             <FooterLinkInput/>
 
-            <div className={"grid grid-cols-2 gap-x-1 gap-y-7"}>
+            <div className={"grid grid-cols-2 gap-x-4 gap-y-10"}>
                 {footerLinkData && (
                     footerLinkData.map(link =>
                         <FooterLinkBox key={link.title} linkData={link}/>

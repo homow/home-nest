@@ -57,14 +57,20 @@
     body {
         @apply font-dana leading-[150%] font-normal text-base tracking-wide bg-primary-bg text-primary-txt;
     }
+    h1, h2, h3 {
+        @apply font-bold;
+    }
+    h4, h5, h6 {
+        @apply font-medium;
+    }
     h1 {
-        @apply text-3xl md:text-5xl xl:text-6xl font-bold leading-[140%];
+        @apply text-3xl md:text-5xl xl:text-6xl leading-[140%];
     }
     h2 {
-        @apply text-2xl md:text-4xl lg:text-5xl font-bold;
+        @apply text-2xl md:text-4xl lg:text-5xl;
     }
     h3 {
-        @apply text-xl md:text-2xl lg:text-3xl font-bold;
+        @apply text-xl md:text-2xl lg:text-3xl;
     }
     a {
         @apply font-medium hover:opacity-70 active:opacity-70 transition-all;
