@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 function FooterLinkBox({linkData}) {
     return (
         <div>
-            <h6 className={"text-grey-60 mb-1 md:text-lg"}>{linkData.title}</h6>
-            <ul className={"flex flex-col gap-0.5 md:gap-1"}>
+            <h6 className={"text-grey-60 mb-4 md:text-lg"}>{linkData.title}</h6>
+            <ul className={"flex flex-col gap-2 md:gap-2.5"}>
                 {linkData.links && linkData.links.map(link =>
                     <li key={link.title} className={"*:text-sm *:font-normal md:*:text-base"}>
                         {link.tagName === "Link" ? (
