@@ -4,18 +4,18 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
     // close menu after click to menu links
     const handleCloseMenu = () => setOpenMenu(false);
     // active style to links
-    const linkClass = ({isActive}) => `block ${isActive ? 'text-violet-500' : ''}`;
+    const linkClass = ({isActive}) => `pr-2 py-3 block md:p-0 ${isActive ? 'text-violet-500' : ''}`;
 
     return (
-        <ul className={`flex items-start gap-4 max-md:nav-mobile ${openMenu ? "right-0" : "-right-41"}`}>
+        <ul className={`flex items-start max-md:nav-mobile md:gap-4 ${openMenu ? "right-0" : "-right-41"}`}>
             <li
-                className={"md:hidden w-full pr-2 py-1.5 cursor-pointer hover:opacity-100 md:max-w-max text-center"}>
+                className={"md:hidden w-full cursor-pointer hover:opacity-100 md:max-w-max text-center mb-5"}>
 
                 <a href="">Logo.</a>
             </li>
             <li
                 onClick={handleCloseMenu}
-                className={"w-full pr-2 py-1.5 cursor-pointer max-md:active:bg-glass md:max-w-max"}>
+                className={"w-full cursor-pointer max-md:active:bg-glass md:max-w-max"}>
                 <NavLink
                     to={"/"}
                     className={linkClass}>
@@ -24,7 +24,7 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
             </li>
             <li
                 onClick={handleCloseMenu}
-                className={"w-full pr-2 py-1.5 cursor-pointer max-md:active:bg-glass md:max-w-max"}>
+                className={"w-full cursor-pointer max-md:active:bg-glass md:max-w-max"}>
                 <NavLink
                     to={"/properties"}
                     className={linkClass}>
@@ -33,7 +33,7 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
             </li>
             <li
                 onClick={handleCloseMenu}
-                className={"w-full pr-2 py-1.5 cursor-pointer max-md:active:bg-glass md:max-w-max"}>
+                className={"w-full cursor-pointer max-md:active:bg-glass md:max-w-max"}>
                 <NavLink
                     to={"/about"}
                     className={linkClass}>
@@ -42,7 +42,7 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
             </li>
             <li
                 onClick={handleCloseMenu}
-                className={"w-full pr-2 py-1.5 cursor-pointer max-md:active:bg-glass md:max-w-max"}>
+                className={"w-full cursor-pointer max-md:active:bg-glass md:max-w-max"}>
                 <NavLink
                     to={"/contact"}
                     className={linkClass}>
