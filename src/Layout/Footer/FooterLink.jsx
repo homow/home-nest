@@ -6,8 +6,8 @@ function FooterLinkBox({linkData}) {
         <div>
             <h6 className={"text-grey-60 mb-4 md:text-lg"}>{linkData.title}</h6>
             <ul className={"flex flex-col gap-2 md:gap-2.5"}>
-                {linkData.links && linkData.links.map(link =>
-                    <li key={link.title} className={"*:text-sm *:font-normal md:*:text-base"}>
+                {linkData.links && linkData.links.map((link, i) =>
+                    <li key={i} className={"*:text-sm *:font-normal md:*:text-base"}>
                         {link.tagName === "Link" ? (
                             <Link to={link.url}>{link.text}</Link>
                         ) : (
