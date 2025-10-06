@@ -26,7 +26,6 @@ function FooterLinkInput() {
         <div>
             <div className={"flex flex-row items-center gap-2 mb-3"}>
                 <Logo className={"max-w-10"}/>
-                <h5 className={"text-lg"}>آشیانه</h5>
             </div>
             <form
                 onSubmit={e => e.preventDefault()}

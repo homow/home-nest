@@ -47,7 +47,7 @@
 }
 
 @utility nav-mobile {
-    @apply fixed z-30 w-40 flex-col bg-grey-10 bottom-0 top-0 pt-8 transition-all duration-200;
+    @apply fixed z-30 w-50 flex-col bg-grey-10 bottom-0 top-0 pt-8 transition-all duration-200;
 }
 
 @layer base {
