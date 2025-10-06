@@ -1,16 +1,40 @@
-# React + Vite
+## 🏠 HomeNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A real estate showcase site with dark and light themes, developed by [Homow](https://card.homow.ir)**  
+Built with architectural precision, structured component logic, and deployed via [GitHub Pages](https://homow.github.io/home-nest/)  
+Original UI design sourced directly from [Figma](https://www.figma.com/design/zpwtuKCAGYyYZn0DMDNImy/Real-Estate-Business-Website-UI-Template---Dark-Theme-%7C-Produce-UI--Community-?node-id=139-6238&t=PAe85chdY6gZx8MK-0) — used as-is without modification.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ⚙️ Tech Stack
 
-## React Compiler
+| Tool             | Version     |
+|------------------|-------------|
+| React            | 19          |
+| React Router     | 7           |
+| Tailwind CSS     | 4           |
+| ESLint           | 9           |
+| Vite             | 7           |
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 📁 Deployment Path
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Hosted on GitHub Pages with base path `/home-nest/`  
+All routes and static assets are configured to load correctly under this path.
+
+---
+
+### 🛠 Features
+
+- Dual theme support: dark and light modes with dynamic switching
+- Clean component architecture with consistent naming conventions
+- `BrowserRouter` configured with `basename` for accurate routing
+- Optimized build process using Vite for performance
+- Precise setup of favicon, logo, and static assets for production
+
+---
+
+### 👤 Developer
+
+Developed by [Homow](https://card.homow.ir) — focused on system architecture, UI precision, and deployment discipline.
