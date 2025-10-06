@@ -1,0 +1,1 @@
+echo "// force PR trigger" > src/__force-pr-trigger.js
