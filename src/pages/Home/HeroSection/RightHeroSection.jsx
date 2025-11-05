@@ -14,7 +14,7 @@ export default function RightHeroSection({className}) {
                 {/* hero section image */}
                 <img
                     decoding={"async"}
-                    className={"w-full relative z-10 aspect-auto"} src="https://xbeopbkmgpzwzhtijiir.supabase.co/storage/v1/object/public/static-assets/ui/home/hero-section-img.webp"
+                    className={"w-full relative z-10 aspect-auto"} src="https://bgwjvtsiajqefdaihrha.supabase.co/storage/v1/object/public/static/home/hero-section-img.webp"
                     onError={(e) => {
                         console.log(e)
                         e.currentTarget.style.display = "none";
