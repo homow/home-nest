@@ -1,14 +1,12 @@
-import React, {StrictMode} from 'react'
+import {StrictMode} from 'react'
 import ReactDOM from 'react-dom/client'
-import {BrowserRouter} from "react-router-dom"
-import {BASE_PATH} from "@/config.js";
-import App from '@/App'
+import {RouterProvider} from "react-router-dom"
 import "@/styles/global.css"
+import {BASE_PATH} from "@/config.js";
+import AppRoutes from "@/routes/AppRoutes.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter basename={BASE_PATH}>
-            <App/>
-        </BrowserRouter>
+        <RouterProvider router={AppRoutes}/>
     </StrictMode>
-)
+);
