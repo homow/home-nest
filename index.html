@@ -22,11 +22,21 @@
 
     <!-- scripts -->
     <script type="module" src="/src/main.jsx"></script>
-    <script>
+    <script type="text/javascript">
         document.documentElement.classList.toggle(
             "dark",
             localStorage.getItem("theme") === "dark"
-        )
+        );
+        (function () {
+            const path = window.location.pathname;
+            const search = window.location.search;
+            const hash = window.location.hash;
+
+            sessionStorage.setItem(
+                'redirect',
+                JSON.stringify({path, search, hash})
+            );
+        })();
     </script>
 </head>
 

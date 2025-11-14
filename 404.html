@@ -3,16 +3,21 @@
 <head>
     <meta http-equiv="refresh" content="0; url=/"/>
     <title></title>
-    <script>
-        (function () {
-            window.location.href = `/${
-                window.location.pathname
-                    ? `?currentRoute=${window.location.pathname.slice(1)}`
-                    : ""
-            }`;
+
+    <script type="text/javascript">
+        (function() {
+            const redirect = sessionStorage.getItem('redirect');
+
+            if (redirect) {
+                sessionStorage.removeItem('redirect');
+                const parsed = JSON.parse(redirect);
+                const path = parsed.path;
+                const search = parsed.search;
+                const hash = parsed.hash;
+                const newUrl = path + (search ? search : '') + (hash ? hash : '');
+                history.replaceState(null, null, newUrl);
+            }
         })();
     </script>
 </head>
-<body>
-</body>
 </html>
