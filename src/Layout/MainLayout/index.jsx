@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import {Outlet, useLocation} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 
 export default function MainLayout({children}) {
     const location = useLocation()
