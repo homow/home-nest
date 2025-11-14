@@ -1,7 +1,7 @@
 import {defineConfig, loadEnv} from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import tailwindcss from "@tailwindcss/vite";
-import path from 'path';
+import path, {resolve} from 'path';
 import {fileURLToPath} from "url";
 import {visualizer} from "rollup-plugin-visualizer";
 
@@ -26,6 +26,10 @@ export default defineConfig(({mode}) => {
         },
         build: {
             rollupOptions: {
+                input: {
+                    main: resolve(__dirname, 'src/index.html'),
+                    notFound: resolve(__dirname, 'src/404.html'),
+                },
                 output: {
                     manualChunks(id) {
                         if (!id.includes('node_modules')) return;
