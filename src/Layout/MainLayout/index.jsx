@@ -1,8 +1,7 @@
-import AppRoutes from "@/routes/AppRoutes.jsx";
 import {useEffect} from "react";
-import {useLocation} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 
-export default function MainLayout() {
+export default function MainLayout({children}) {
     const location = useLocation()
 
     useEffect(() => {
@@ -16,7 +15,7 @@ export default function MainLayout() {
 
     return (
         <main className={"mt-10 space-y-20"}>
-            <AppRoutes/>
+            {children}
         </main>
     )
-}
+};
