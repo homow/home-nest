@@ -27,8 +27,8 @@ export default defineConfig(({mode}) => {
         build: {
             rollupOptions: {
                 input: {
-                    main: resolve(__dirname, 'src/index.html'),
-                    notFound: resolve(__dirname, 'src/404.html'),
+                    main: resolve(__dirname, 'index.html'),
+                    notFound: resolve(__dirname, '404.html'),
                 },
                 output: {
                     manualChunks(id) {
