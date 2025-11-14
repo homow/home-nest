@@ -5,19 +5,8 @@
     <title></title>
 
     <script type="text/javascript">
-        (function() {
-            const redirect = sessionStorage.getItem('redirect');
-
-            if (redirect) {
-                sessionStorage.removeItem('redirect');
-                const parsed = JSON.parse(redirect);
-                const path = parsed.path;
-                const search = parsed.search;
-                const hash = parsed.hash;
-                const newUrl = path + (search ? search : '') + (hash ? hash : '');
-                history.replaceState(null, null, newUrl);
-            }
-        })();
+        const path = window.location.pathname + window.location.search + window.location.hash;
+        window.location.replace(path);
     </script>
 </head>
 </html>
