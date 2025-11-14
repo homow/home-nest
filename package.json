@@ -14,9 +14,11 @@
     "publish-all": "npm run update-main && npm run build-deploy"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.3"
+    "react-router-dom": "^7.9.3",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -30,8 +32,8 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
+    "rollup-plugin-visualizer": "^6.0.5",
     "tailwindcss": "^4.1.13",
-    "vite": "^7.1.7",
-    "rollup-plugin-visualizer": "^6.0.5"
+    "vite": "^7.1.7"
   }
 }
