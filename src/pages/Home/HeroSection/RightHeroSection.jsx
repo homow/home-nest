@@ -14,9 +14,8 @@ export default function RightHeroSection({className}) {
                 {/* hero section image */}
                 <img
                     decoding={"async"}
-                    className={"w-full relative z-10 aspect-auto"} src="https://bgwjvtsiajqefdaihrha.supabase.co/storage/v1/object/public/static/home/hero-section-img.webp"
+                    className={"w-full relative z-10 aspect-square"} src="https://bgwjvtsiajqefdaihrha.supabase.co/storage/v1/object/public/static/home/hero-section-img.webp"
                     onError={(e) => {
-                        console.log(e)
                         e.currentTarget.style.display = "none";
                         const fallback = document.createElement("div");
                         fallback.className = "min-h-100 min-w-200 flex items-center justify-center bg-zinc-800 text-zinc-400";
