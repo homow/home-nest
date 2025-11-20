@@ -1,3 +1,5 @@
+import Icon from "@ui/icons/Icon.jsx";
+
 export default function RightHeroSection({className}) {
     return (
         <div className={`relative container xl:p-0 xl:w-full ${className}`}>
@@ -5,11 +7,11 @@ export default function RightHeroSection({className}) {
             <div className={"relative bg-zinc-900 rounded-custom overflow-hidden border border-grey-15 max-w-200 mx-auto xl:max-w-230 xl:mx-0 xl:rounded-none"}>
 
                 {/* wave svg */}
-                <span className={"absolute inset-0 opacity-20 dark:opacity-40"}>
-                    <svg className={"w-full h-full"}>
-                        <use href="#waveField-icon"></use>
-                    </svg>
-                </span>
+                <Icon
+                    parentClassName={"inline absolute inset-0 opacity-20 dark:opacity-40"}
+                    className={"size-full"}
+                    icon={"waveField"}
+                />
 
                 {/* hero section image */}
                 <img
