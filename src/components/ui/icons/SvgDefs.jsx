@@ -597,5 +597,5 @@ export default function SvgDefs() {
             <HomePage/>
             <Footer/>
         </svg>
-    )
-}
+    );
+};
