@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import Icon from "@ui/icons/Icon.jsx";
+import Icon from "@ui/icons/Icon";
 
 export default function TopGlobalBanner() {
     const [visible, setVisible] = useState(true);
@@ -32,9 +32,11 @@ export default function TopGlobalBanner() {
                         localStorage.setItem("topGlobalBannerVisible", "false")
                     }}
                     className={"absolute right-4 top-1/2 -translate-y-1/2 bg-glass backdrop-blur-sm rounded-full cursor-pointer p-1"}>
-                    <svg className={"size-4 sm:size-5"}>
-                        <use href="#close-icon"></use>
-                    </svg>
+                    <Icon
+                        parentClassName={"inline"}
+                        className={"size-4 sm:size-5"}
+                        icon={"close"}
+                    />
                 </span>
             </div>
         </div>
