@@ -73,7 +73,7 @@
         @apply text-xl md:text-2xl lg:text-3xl;
     }
     a {
-        @apply font-medium hover:opacity-70 active:opacity-70 transition-all;
+        @apply font-medium hover:text-violet-600 active:text-violet-600 transition-all;
     }
 }
 
