@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import Icon from "@ui/icons/Icon.jsx";
 
 export default function TopGlobalBanner() {
     const [visible, setVisible] = useState(true);
@@ -14,9 +15,10 @@ export default function TopGlobalBanner() {
     return (
         <div id="TopGlobalBanner" className={"relative overflow-hidden pt-10 pb-5 border-grey-15 border-b md:py-3.5"}>
             <span className={"absolute -z-10 inset-0 -left-237 sm:left-0 opacity-20 dark:opacity-40"}>
-                <svg className={"w-full"}>
-                    <use href="#waveField-icon"></use>
-                </svg>
+                <Icon
+                    className={"w-full"}
+                    icon={"waveField"}
+                />
             </span>
 
             <div className={"container relative text-sm sm:text-base"}>
