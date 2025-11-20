@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Icon from "@ui/icons/Icon.jsx";
 
 export default function ThemeSection() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") === "dark" ? "dark" : "light");
@@ -13,10 +14,12 @@ export default function ThemeSection() {
     return (
         <div
             onClick={changeTheme}
-            className={"inline-block p-1 rounded-full cursor-pointer"}>
-            <svg className={"size-6"}>
-                <use href={`#${theme === "dark" ? "sun-icon" : "moon-icon"}`}></use>
-            </svg>
+            className={"inline-block p-1 rounded-full cursor-pointer"}
+        >
+            <Icon
+                className={"size-6"}
+                icon={theme === "dark" ? "sun" : "moon"}
+            />
         </div>
     )
 }
