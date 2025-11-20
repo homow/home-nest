@@ -48,40 +48,40 @@ function FooterLinkInput() {
     )
 }
 
-export default function FooterLinks() {
-    const footerLinkData = [
-        {
-            title: "صفحه اصلی",
-            links: [
-                {tagName: "Link", url: "/#hero-section", text: "بخش اصلی"},
-                {tagName: "Link", url: "/#featured-property", text: "ملک های جدید"}
-            ],
-        },
-        {
-            title: "درباره ما",
-            links: [
-                {tagName: "Link", url: "/about", text: "داستان ما"},
-                {tagName: "Link", url: "/about", text: "کارهای ما"}
-            ],
-        },
-        {
-            title: "پورتفولیو",
-            links: [
-                {tagName: "a", url: "https://homow.ir", text: "وبسایت اصلی"},
-                {tagName: "a", url: "https://card.homow.ir", text: "ارتباط با من"},
-                {tagName: "a", url: "https://t.me/homow_portfolio", text: "نمونه کارها"}
-            ],
-        },
-        {
-            title: "راه های ارتباطی",
-            links: [
-                {tagName: "a", url: "https://github.com/homow", text: "گیتهاب"},
-                {tagName: "a", url: "tel:+989210629512", text: "شماره تلفن"},
-                {tagName: "a", url: "https://www.youtube.com/@homow_dev", text: "یوتیوب آموزشِ فرانت"},
-            ]
-        }
-    ]
+const footerLinkData = [
+    {
+        title: "صفحه اصلی",
+        links: [
+            {tagName: "Link", url: "/#hero-section", text: "بخش اصلی"},
+            {tagName: "Link", url: "/#featured-property", text: "ملک های جدید"}
+        ],
+    },
+    {
+        title: "درباره ما",
+        links: [
+            {tagName: "Link", url: "/about", text: "داستان ما"},
+            {tagName: "Link", url: "/about", text: "کارهای ما"}
+        ],
+    },
+    {
+        title: "پورتفولیو",
+        links: [
+            {tagName: "a", url: "https://homow.ir", text: "وبسایت اصلی"},
+            {tagName: "a", url: "https://card.homow.ir", text: "ارتباط با من"},
+            {tagName: "a", url: "https://t.me/homow_portfolio", text: "نمونه کارها"}
+        ],
+    },
+    {
+        title: "راه های ارتباطی",
+        links: [
+            {tagName: "a", url: "https://github.com/homow", text: "گیتهاب"},
+            {tagName: "a", url: "tel:+989210629512", text: "شماره تلفن"},
+            {tagName: "a", url: "https://www.youtube.com/@homow_dev", text: "یوتیوب آموزشِ فرانت"},
+        ]
+    }
+];
 
+export default function FooterLinks() {
     return (
         <div className={"container space-y-12 xl:flex flex-row-reverse items-start justify-between"}>
             <FooterLinkInput/>
