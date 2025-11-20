@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import Icon from "@ui/icons/Icon";
 
 export default function ScrollUp({triggerRef}) {
     const [visible, setVisible] = useState(false);
@@ -22,9 +23,11 @@ export default function ScrollUp({triggerRef}) {
             href="#"
             className={`fixed left-2.5 bottom-2.5 p-2 rounded-full bg-violet-600 text-white cursor-pointer z-10 hover:opacity-100 ${visible ? "inline-block" : "hidden"}`}
         >
-            <svg className={"size-4"}>
-                <use href="#upArrow-icon"></use>
-            </svg>
+            <Icon
+                parentClassName={"inline"}
+                className={"size-4"}
+                icon={"upArrow"}
+            />
         </a>
-    )
-}
+    );
+};
