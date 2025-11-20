@@ -52,7 +52,7 @@
 
 @layer base {
     html {
-        @apply scroll-smooth;
+        @apply transition-all scroll-smooth;
     }
     body {
         @apply font-dana leading-[150%] font-normal text-base tracking-wide bg-primary-bg text-primary-txt;
