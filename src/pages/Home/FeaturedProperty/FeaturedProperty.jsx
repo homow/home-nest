@@ -1,6 +1,7 @@
 import TopTitleSections from "@/components/common/TopTitleSections.jsx";
 import PropertyCard from "@/components/common/PropertyCard.jsx";
 import {Link} from "react-router-dom";
+import Icon from "@ui/icons/Icon.jsx";
 
 function PaginationPropertyCards() {
     return (
@@ -16,9 +17,11 @@ function PaginationPropertyCards() {
 
             <div className={"flex flex-row items-center gap-1.5"}>
                 <span className={"inline-block p-1 bg-grey-10 rounded-full border border-grey-15 opacity-50"}>
-                    <svg className={"size-5"}>
-                        <use href="#rightArrow-icon"></use>
-                    </svg>
+                    <Icon
+                        parentClassName={"inline"}
+                        className={"size-5"}
+                        icon={"rightArrow"}
+                    />
                 </span>
 
                 <div className={"text-grey-60 lg:hidden"}>
@@ -28,9 +31,11 @@ function PaginationPropertyCards() {
                 </div>
 
                 <span className={"inline-block p-1 bg-grey-10 rounded-full border border-grey-15"}>
-                    <svg className={"size-5"}>
-                        <use href="#leftArrow-icon"></use>
-                    </svg>
+                    <Icon
+                        parentClassName={"inline"}
+                        className={"size-5"}
+                        icon={"leftArrow"}
+                    />
                 </span>
             </div>
         </div>
@@ -53,5 +58,5 @@ export default function FeaturedProperty() {
             </div>
             <PaginationPropertyCards/>
         </section>
-    )
-}
+    );
+};
