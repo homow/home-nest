@@ -22,7 +22,7 @@ export default function RightHeroSection({className}) {
                         const fallback = document.createElement("div");
                         fallback.className = "min-h-100 min-w-200 flex items-center justify-center bg-zinc-800 text-zinc-400";
                         fallback.innerHTML = `
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 opacity-60" viewBox="0 0 24 24" stroke="currentColor">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l9-4 9 4-9 4-9-4z" />
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17l9 4 9-4M3 12l9 4 9-4" />
                             </svg>`;
@@ -32,11 +32,11 @@ export default function RightHeroSection({className}) {
             </div>
 
             {/* circle svg */}
-            <span className={"absolute z-10 left-[4%] -bottom-[18%] sm:-bottom-[14%] sm:left-[2%] md:-bottom-[10%] lg:left-[11%] lg:-bottom-[8%] xl:bottom-2/3 xl:-left-4"}>
-                <svg className={"size-30"}>
-                    <use href="#discoverCircle-icon"></use>
-                </svg>
-            </span>
+            <Icon
+                parentClassName={"inline absolute z-10 left-[4%] -bottom-[18%] sm:-bottom-[14%] sm:left-[2%] md:-bottom-[10%] lg:left-[11%] lg:-bottom-[8%] xl:bottom-2/3 xl:-left-4"}
+                className={"size-30"}
+                icon={"discoverCircle"}
+            />
         </div>
-    )
-}
+    );
+};
