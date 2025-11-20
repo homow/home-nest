@@ -3,6 +3,7 @@ import HeaderNav from "./HeaderNav.jsx";
 import ThemeSection from "./ThemeSection.jsx";
 import Overlay from "@ui/Overlay.jsx";
 import Logo from "@ui/Logo.jsx";
+import Icon from "@ui/icons/Icon.jsx";
 
 export default function HeaderBase() {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -26,12 +27,14 @@ export default function HeaderBase() {
                     <span
                         onClick={() => setIsOpenMenu(!isOpenMenu)}
                         className={"cursor-pointer md:hidden"}>
-                        <svg className={"size-6 -scale-x-100"}>
-                            <use href={isOpenMenu ? "#close-icon" : "#bars-icon"}></use>
-                        </svg>
+                        <Icon
+                            parentClassName={"inline"}
+                            className={"-scale-x-100"}
+                            icon={isOpenMenu ? "close" : "bars"}
+                        />
                     </span>
                 </nav>
             </div>
         </>
-    )
-}
+    );
+};
