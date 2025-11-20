@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Icon from "@ui/icons/Icon.jsx";
 
 export default function PropertyCard({img, title, description, features, price, propertyLink, className}) {
     return (
@@ -23,27 +24,15 @@ export default function PropertyCard({img, title, description, features, price, 
             {/* features card */}
             <div className={"flex flex-wrap flex-row gap-1"}>
                 <p className={"flex flex-row items-start text-sm gap-1 px-3.5 py-1.5 border border-grey-15 rounded-custom-28"}>
-                    <span>
-                        <svg className={"size-4"}>
-                            <use href="#buildingFeatures-icon"></use>
-                        </svg>
-                    </span>
+                    <Icon icon={"buildingFeatures"} className={"size-4"}/>
                     {features[0]}-اتاق‌خواب
                 </p>
                 <p className={"flex flex-row items-start text-sm gap-1 px-3.5 py-1.5 border border-grey-15 rounded-custom-28"}>
-                    <span>
-                        <svg className={"size-4"}>
-                            <use href="#bedFeatures-icon"></use>
-                        </svg>
-                    </span>
+                    <Icon icon={"bedFeatures"} className={"size-4"}/>
                     {features[1]}-حمام
                 </p>
                 <p className={"flex flex-row items-start text-sm gap-1 px-3.5 py-1.5 border border-grey-15 rounded-custom-28"}>
-                    <span>
-                        <svg className={"size-4"}>
-                            <use href="#bathFeatures-icon"></use>
-                        </svg>
-                    </span>
+                    <Icon icon={"bathFeatures"} className={"size-4"}/>
                     {features[2]}
                 </p>
             </div>
@@ -57,5 +46,5 @@ export default function PropertyCard({img, title, description, features, price, 
                 </p>
             </div>
         </div>
-    )
-}
+    );
+};
