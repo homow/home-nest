@@ -1,6 +1,6 @@
-import FooterLink from "./components/FooterLink.jsx";
-import FooterTop from "./components/FooterTop.jsx";
-import FooterCopyrightAndSocial from "./components/FooterCopyrightAndSocial.jsx"
+import FooterLink from "./components/FooterLink";
+import FooterTop from "./components/FooterTop";
+import FooterCopyrightAndSocial from "./components/FooterCopyrightAndSocial"
 
 export default function Footer() {
     return (
