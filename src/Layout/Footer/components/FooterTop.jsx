@@ -1,13 +1,20 @@
 import {Link} from "react-router-dom";
+import Icon from "@ui/icons/Icon";
+import {cn} from "@utils/ui-utils.js";
 
 function GrowSpineIcon({className}) {
     return (
-        <span className={`-z-10 inline-block max-w-max absolute ${className}`}>
-            <svg className={`opacity-8 dark:opacity-3 w-72`}>
-                <use href="#growthSpine-icon"></use>
-            </svg>
+        <span
+            className={
+                cn("-z-10 inline-block max-w-max absolute", className)
+            }
+        >
+            <Icon
+                className={"size-auto opacity-8 dark:opacity-3 w-72"}
+                icon={"growthSpine"}
+            />
         </span>
-    )
+    );
 }
 
 export default function FooterTop() {
