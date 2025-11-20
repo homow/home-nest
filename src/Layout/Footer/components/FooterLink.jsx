@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import Logo from "@ui/Logo.jsx";
+import Logo from "@ui/Logo";
 
 function FooterLinkBox({linkData}) {
     return (
@@ -94,5 +94,5 @@ export default function FooterLinks() {
                 )}
             </div>
         </div>
-    )
-}
+    );
+};
