@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Icon from "@ui/icons/Icon";
 
 export default function TopTitleSections({title, text, link = null, linkText}) {
     return (
@@ -6,9 +7,10 @@ export default function TopTitleSections({title, text, link = null, linkText}) {
 
             {/* star icon */}
             <span className={"absolute -top-1/3 -right-2 -scale-x-100"}>
-                <svg className={"w-12 h-5 lg:w-14 lg:h-6"}>
-                    <use href="#topStarSections-icon"></use>
-                </svg>
+                <Icon
+                    parentClassName={"w-12 h-5 lg:w-14 lg:h-6"}
+                    icon={"topStarSections"}
+                />
             </span>
 
             {/* title */}
@@ -27,5 +29,5 @@ export default function TopTitleSections({title, text, link = null, linkText}) {
                 <p className={"text-sm text-grey-60 lg:text-base"}>{text}</p>
             )}
         </div>
-    )
-}
+    );
+};
