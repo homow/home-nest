@@ -14,12 +14,11 @@ export default function TopGlobalBanner() {
 
     return (
         <div id="TopGlobalBanner" className={"relative overflow-hidden pt-10 pb-5 border-grey-15 border-b md:py-3.5"}>
-            <span className={"absolute -z-10 inset-0 -left-237 sm:left-0 opacity-20 dark:opacity-40"}>
-                <Icon
-                    className={"w-full"}
-                    icon={"waveField"}
-                />
-            </span>
+            <Icon
+                parentClassName={"absolute -z-10 inset-0 -left-237 sm:left-0 opacity-20 dark:opacity-40"}
+                className={"size-full"}
+                icon={"waveField"}
+            />
 
             <div className={"container relative text-sm sm:text-base"}>
                 <div className={"flex flex-row items-center justify-end md:justify-center gap-2 sm:gap-4"}>
