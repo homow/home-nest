@@ -1,9 +1,9 @@
 import {useState} from "react";
-import HeaderNav from "./HeaderNav.jsx";
-import ThemeSection from "./ThemeSection.jsx";
-import Overlay from "@ui/Overlay.jsx";
-import Logo from "@ui/Logo.jsx";
-import Icon from "@ui/icons/Icon.jsx";
+import HeaderNav from "./HeaderNav";
+import ThemeSection from "./ThemeSection";
+import Overlay from "@ui/Overlay";
+import Logo from "@ui/Logo";
+import Icon from "@ui/icons/Icon";
 
 export default function HeaderBase() {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
