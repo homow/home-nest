@@ -10,7 +10,7 @@ function GrowSpineIcon({className}) {
             }
         >
             <Icon
-                className={"size-auto opacity-8 dark:opacity-3 w-72"}
+                className={"inline size-auto opacity-8 dark:opacity-3 w-72 max-h-max"}
                 icon={"growthSpine"}
             />
         </span>
@@ -19,11 +19,17 @@ function GrowSpineIcon({className}) {
 
 export default function FooterTop() {
     return (
-        <div className={"relative overflow-hidden border-y border-grey-15"}>
+        <div
+            className={"relative overflow-hidden border-y border-grey-15"}
+        >
 
             {/* grow spine svg icon */}
-            <GrowSpineIcon className={"rotate-90 top-0 -left-20 md:bottom-0 md:top-auto md:rotate-0 md:-left-4 md:scale-150"}/>
-            <GrowSpineIcon className={"-scale-x-100 -right-4 bottom-0 md:-scale-x-150 md:scale-y-150"}/>
+            <GrowSpineIcon
+                className={"rotate-90 top-0 -left-20 md:bottom-0 md:top-auto md:rotate-0 md:-left-4 md:scale-150"}
+            />
+            <GrowSpineIcon
+                className={"-scale-x-100 -right-4 bottom-0 md:-scale-x-150 md:scale-y-150"}
+            />
 
             <div className={"container py-12 sm:flex flex-row items-center justify-between"}>
                 {/* Footer top info */}
@@ -35,7 +41,12 @@ export default function FooterTop() {
                 </div>
                 <div className={"w-full sm:max-w-max"}>
                     {/* footer top link */}
-                    <Link className={"primary-btn block text-center w-full"} to="/properties">دیدن ملک ها</Link>
+                    <Link
+                        className={"primary-btn block text-center w-full"}
+                        to="/properties"
+                    >
+                        دیدن ملک ها
+                    </Link>
                 </div>
             </div>
         </div>
