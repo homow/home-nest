@@ -7,7 +7,7 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
     const handleCloseMenu = () => setOpenMenu(false);
 
     // active style to links
-    const linkClass = ({isActive}) => cn("pr-2 py-3 block md:p-0", isActive && "text-violet-500");
+    const linkClass = ({isActive}) => cn("my-0.5 pr-2 py-3 block hover:max-md:bg-black/10 hover:max-md:dark:bg-white/5 active:max-md:bg-black/10 active:max-md:dark:bg-white/5 md:p-0", isActive && "text-violet-500 max-md:bg-black/10 max-md:dark:bg-white/5");
 
     return (
         <ul
