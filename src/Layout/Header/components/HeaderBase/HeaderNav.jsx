@@ -10,7 +10,12 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
     const linkClass = ({isActive}) => cn("pr-2 py-3 block md:p-0", isActive && "text-violet-500");
 
     return (
-        <ul className={`flex items-start max-md:nav-mobile md:gap-4 ${openMenu ? "right-0" : "-right-51"}`}>
+        <ul
+            className={
+                cn("flex items-start max-md:nav-mobile md:gap-4",
+                    openMenu ? "right-0" : "-right-51")
+            }
+        >
             <li
                 className={"md:hidden w-full cursor-pointer hover:opacity-100 md:max-w-max text-center mb-5"}>
                 <Logo className={"max-w-10"}/>
@@ -52,5 +57,5 @@ export default function HeaderNav({openMenu, setOpenMenu}) {
                 </NavLink>
             </li>
         </ul>
-    )
-}
+    );
+};
