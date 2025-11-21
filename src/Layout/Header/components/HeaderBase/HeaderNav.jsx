@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom";
-import Logo from "@ui/Logo.jsx";
+import Logo from "@ui/Logo";
 import {cn} from "@utils/ui-utils.js";
 
 export default function HeaderNav({openMenu, setOpenMenu}) {
