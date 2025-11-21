@@ -1,11 +1,13 @@
 import {NavLink} from "react-router-dom";
 import Logo from "@ui/Logo.jsx";
+import {cn} from "@utils/ui-utils.js";
 
 export default function HeaderNav({openMenu, setOpenMenu}) {
     // close menu after click to menu links
     const handleCloseMenu = () => setOpenMenu(false);
+
     // active style to links
-    const linkClass = ({isActive}) => `pr-2 py-3 block md:p-0 ${isActive ? 'text-violet-500' : ''}`;
+    const linkClass = ({isActive}) => cn("pr-2 py-3 block md:p-0", isActive && "text-violet-500");
 
     return (
         <ul className={`flex items-start max-md:nav-mobile md:gap-4 ${openMenu ? "right-0" : "-right-51"}`}>
