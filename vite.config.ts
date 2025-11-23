@@ -1,15 +1,16 @@
-import {defineConfig, loadEnv} from 'vite';
+import {type ConfigEnv, defineConfig, loadEnv} from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import tailwindcss from "@tailwindcss/vite";
 import path, {resolve} from 'path';
 import {fileURLToPath} from "url";
 import {visualizer} from "rollup-plugin-visualizer";
+import checker from "vite-plugin-checker";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig(({mode}) => {
-    const env = loadEnv(mode, process.cwd(), '');
+export default defineConfig(({mode}: ConfigEnv) => {
+    const env: Record<string, string> = loadEnv(mode, process.cwd(), '');
     const apiUrl = env.API_URL;
 
     return {
@@ -67,6 +68,11 @@ export default defineConfig(({mode}) => {
         plugins: [
             react(),
             tailwindcss(),
+            checker({
+                typescript: {
+                    tsconfigPath: "./tsconfig.app.json"
+                }
+            }),
             env.ANALYZE === "true" &&
             visualizer({
                 filename: "analyze.html",
