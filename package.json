@@ -15,6 +15,7 @@
     "publish-all": "npm run update-main && npm run build-deploy"
   },
   "dependencies": {
+    "@types/node": "^24.10.1",
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "react": "^19.1.1",
