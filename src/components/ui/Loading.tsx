@@ -1,4 +1,10 @@
-export default function Loading({ msg = "لطفاً صبر کنید..." }) {
+import type {JSX} from "react";
+
+type Props = {
+    msg?: string;
+}
+
+export default function Loading({msg = "لطفاً صبر کنید..."}: Props): JSX.Element {
     return (
         <div
             className="flex items-center justify-center"
