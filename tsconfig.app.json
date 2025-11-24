@@ -14,8 +14,11 @@
       "@pages/*": [
         "src/pages/*"
       ],
-      "@layouts": [
+      "@layouts/*": [
         "src/layouts/*"
+      ],
+      "@ui/*": [
+        "src/components/ui/*"
       ]
     },
     "lib": [

@@ -1,23 +1,10 @@
-import {lazy} from "react";
 import {createBrowserRouter} from "react-router-dom";
+import LazyWithSuspense from "@ui/suspense/LazyWithSuspense"
 import App from "@/App";
-import SuspenseBoundary from "@ui/SuspenseBoundary";
 import {BASE_PATH} from "@/config";
 
-const lazyWithSuspense = importFunc => {
-    const Component = lazy(importFunc);
-
-    return function Wrapped() {
-        return (
-            <SuspenseBoundary>
-                <Component/>
-            </SuspenseBoundary>
-        )
-    }
-}
-
-const Home = lazyWithSuspense(() => import("@/pages/Home"));
-const NotFound = lazyWithSuspense(() => import("@/pages/NotFound"));
+const Home = LazyWithSuspense(() => import("@/pages/Home"));
+const NotFound = LazyWithSuspense(() => import("@/pages/NotFound"));
 
 const routes = createBrowserRouter(
     [
