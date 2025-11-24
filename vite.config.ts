@@ -11,19 +11,21 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({mode}: ConfigEnv) => {
     const env: Record<string, string> = loadEnv(mode, process.cwd(), '');
-    const apiUrl = env.API_URL;
+    const apiUrl: string = env.API_URL;
 
     return {
         base: env.VITE_BASE_PATH || "/",
         server: {
             host: true,
-            proxy: apiUrl && {
-                "/api": {
-                    target: env.API_URL,
-                    changeOrigin: true,
-                    secure: false,
+            proxy: apiUrl
+                ? {
+                    "/api": {
+                        target: apiUrl,
+                        changeOrigin: true,
+                        secure: false,
+                    }
                 }
-            }
+                : undefined
         },
         build: {
             rollupOptions: {
@@ -32,7 +34,7 @@ export default defineConfig(({mode}: ConfigEnv) => {
                     notFound: resolve(__dirname, '404.html'),
                 },
                 output: {
-                    manualChunks(id) {
+                    manualChunks(id: string): string | void {
                         if (!id.includes('node_modules')) return;
 
                         // React ecosystem
