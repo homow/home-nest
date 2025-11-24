@@ -2,7 +2,7 @@ import {lazy} from "react";
 import {createBrowserRouter} from "react-router-dom";
 import App from "@/App";
 import SuspenseBoundary from "@ui/SuspenseBoundary";
-import {BASE_PATH} from "@/config.js";
+import {BASE_PATH} from "@/config";
 
 const lazyWithSuspense = importFunc => {
     const Component = lazy(importFunc);
