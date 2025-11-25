@@ -1,4 +1,4 @@
-import Icon from "@ui/icons/Icon";
+import Icon from "@ui/icons/Icon.tsx";
 
 function FooterSocialMedia({link, icon}) {
     return (
