@@ -594,7 +594,7 @@ const Footer: FC = (): JSX.Element => {
 
 export default function SvgDefs(): JSX.Element {
     return (
-        <svg className={"hidden"}>
+        <svg aria-hidden={true} className={"hidden"}>
             <Header/>
             <HomePage/>
             <Footer/>
