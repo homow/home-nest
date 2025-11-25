@@ -1,7 +1,7 @@
 import TopTitleSections from "@/components/common/TopTitleSections.jsx";
 import PropertyCard from "@/components/common/PropertyCard.jsx";
 import {Link} from "react-router-dom";
-import Icon from "@ui/icons/Icon.jsx";
+import Icon from "@ui/icons/Icon.tsx";
 
 function PaginationPropertyCards() {
     return (
