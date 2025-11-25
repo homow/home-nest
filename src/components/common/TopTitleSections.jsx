@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import Icon from "@ui/icons/Icon";
+import Icon from "@ui/icons/Icon.tsx";
 
 export default function TopTitleSections({title, text, link = null, linkText}) {
     return (
