@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import Logo from "@ui/Logo";
-import {cn} from "@utils/ui-utils.js";
+import {cn} from "@utils/ui-utils.ts";
 
 export default function HeaderNav({openMenu, setOpenMenu}) {
     // close menu after click to menu links
