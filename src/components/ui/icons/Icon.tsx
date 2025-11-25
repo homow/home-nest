@@ -1,6 +1,15 @@
-import {cn} from "@/lib/utils/ui-utils.js";
+import {type JSX} from "react";
+import {cn} from "@/lib/utils/ui-utils";
 
-export default function Icon({icon, className, parentClassName}) {
+type Props = {
+    icon: string;
+    className?: string;
+    parentClassName?: string;
+}
+
+export default function Icon(
+    {icon, className, parentClassName}: Props,
+): JSX.Element {
     return (
         <span
             className={
@@ -8,6 +17,8 @@ export default function Icon({icon, className, parentClassName}) {
             }
         >
             <svg
+                role="img"
+                aria-label={icon}
                 className={
                     cn("size-6", className)
                 }
