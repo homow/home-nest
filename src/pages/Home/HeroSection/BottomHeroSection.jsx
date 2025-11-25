@@ -1,4 +1,4 @@
-import Icon from "@ui/icons/Icon.jsx";
+import Icon from "@ui/icons/Icon.tsx";
 
 function BottomHeroSectionBox({text, icon}) {
     return (
