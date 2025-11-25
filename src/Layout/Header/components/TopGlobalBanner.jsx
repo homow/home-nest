@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import Icon from "@ui/icons/Icon";
+import Icon from "@ui/icons/Icon.tsx";
 
 export default function TopGlobalBanner() {
     const [visible, setVisible] = useState(true);
