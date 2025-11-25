@@ -3,7 +3,7 @@ import HeaderNav from "./HeaderNav";
 import ThemeSection from "./ThemeSection";
 import Overlay from "@ui/Overlay";
 import Logo from "@ui/Logo";
-import Icon from "@ui/icons/Icon";
+import Icon from "@ui/icons/Icon.tsx";
 
 export default function HeaderBase() {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
