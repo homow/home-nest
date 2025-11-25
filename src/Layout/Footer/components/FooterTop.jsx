@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
-import Icon from "@ui/icons/Icon";
-import {cn} from "@utils/ui-utils.js";
+import Icon from "@ui/icons/Icon.tsx";
+import {cn} from "@utils/ui-utils.ts";
 
 function GrowSpineIcon({className}) {
     return (
