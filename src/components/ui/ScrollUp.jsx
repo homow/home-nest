@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import Icon from "@ui/icons/Icon";
+import Icon from "@ui/icons/Icon.tsx";
 
 export default function ScrollUp({triggerRef}) {
     const [visible, setVisible] = useState(false);
