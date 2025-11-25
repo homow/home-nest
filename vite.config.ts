@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({mode}: ConfigEnv) => {
     const env: Record<string, string> = loadEnv(mode, process.cwd(), '');
-    const apiUrl: string = env.API_URL;
+    const apiUrl: string = env.API_URL || env.VITE_API_URL;
 
     return {
         base: env.VITE_BASE_PATH || "/",
@@ -37,16 +37,12 @@ export default defineConfig(({mode}: ConfigEnv) => {
                     manualChunks(id: string): string | void {
                         if (!id.includes('node_modules')) return;
 
-                        // React ecosystem
                         if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) return 'react-core';
 
-                        // Axios (network layer)
                         if (id.includes('axios')) return 'axios';
 
-                        // Small utils
                         if (id.includes('clsx') || id.includes('tailwind-merge')) return 'utils';
 
-                        // Default vendor chunk
                         return 'vendor';
                     }
                 }
