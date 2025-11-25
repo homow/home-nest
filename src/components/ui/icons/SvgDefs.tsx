@@ -1,4 +1,6 @@
-const Header = () => {
+import type {FC, JSX} from "react";
+
+const Header: FC = (): JSX.Element => {
     return (
         <>
             {/* close */}
@@ -21,7 +23,7 @@ const Header = () => {
         </>
     )
 };
-const HomePage = () => {
+const HomePage: FC = (): JSX.Element => {
     return (
         <>
             {/* waveField */}
@@ -556,7 +558,7 @@ const HomePage = () => {
         </>
     )
 }
-const Footer = () => {
+const Footer: FC = (): JSX.Element => {
     return (
         <>
             {/* send */}
@@ -590,7 +592,7 @@ const Footer = () => {
     )
 };
 
-export default function SvgDefs() {
+export default function SvgDefs(): JSX.Element {
     return (
         <svg className={"hidden"}>
             <Header/>
