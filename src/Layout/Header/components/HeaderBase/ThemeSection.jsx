@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Icon from "@ui/icons/Icon.jsx";
+import Icon from "@ui/icons/Icon.tsx";
 
 export default function ThemeSection() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") === "dark" ? "dark" : "light");
