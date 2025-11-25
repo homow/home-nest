@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import Logo from "@ui/Logo";
-import Icon from "@ui/icons/Icon";
+import Icon from "@ui/icons/Icon.tsx";
 
 function FooterLinkBox({linkData}) {
     return (
