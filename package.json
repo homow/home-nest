@@ -15,16 +15,12 @@
     "publish-all": "npm run update-main && npm run build-deploy"
   },
   "dependencies": {
-    "@types/node": "^24.10.1",
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.3",
-    "tailwind-merge": "^3.4.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0",
-    "vite-plugin-checker": "^0.11.0"
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -40,6 +36,10 @@
     "globals": "^16.4.0",
     "rollup-plugin-visualizer": "^6.0.5",
     "tailwindcss": "^4.1.13",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.47.0",
+    "vite-plugin-checker": "^0.11.0"
   }
 }
