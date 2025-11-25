@@ -1,4 +1,4 @@
-import Icon from "@ui/icons/Icon.jsx";
+import Icon from "@ui/icons/Icon.tsx";
 
 export default function RightHeroSection({className}) {
     return (
