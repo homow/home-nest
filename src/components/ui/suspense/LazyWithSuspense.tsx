@@ -3,9 +3,9 @@ import {lazy} from "react";
 import SuspenseBoundary from "./SuspenseBoundary";
 
 function LazyWithSuspense(
-    importFunc: () => Promise<{ default: ComponentType<any> }>
-): () => JSX.Element {
-    const Component: LazyExoticComponent<ComponentType<any>> = lazy(importFunc);
+    importFunc: () => Promise<{ default: ComponentType }>
+): ComponentType {
+    const Component: LazyExoticComponent<ComponentType> = lazy(importFunc);
 
     return function Wrapped(): JSX.Element {
         return (
