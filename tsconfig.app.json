@@ -19,6 +19,9 @@
       ],
       "@ui/*": [
         "src/components/ui/*"
+      ],
+      "@utils/*": [
+        "src/lib/utils/*"
       ]
     },
     "lib": [
