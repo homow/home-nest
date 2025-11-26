@@ -8,7 +8,7 @@ type Props = {
     className?: string;
     disabled?: boolean;
     hasError?: boolean;
-    loading: boolean;
+    loading?: boolean;
 }
 
 function LoadingSpinner(): JSX.Element {
