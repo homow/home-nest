@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import {NavLink} from "react-router";
 import Logo from "@ui/Logo.tsx";
 import {cn} from "@utils/ui-utils.ts";
 
