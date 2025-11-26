@@ -1,8 +1,13 @@
-import {Link} from "react-router-dom";
-import Icon from "@ui/icons/Icon.tsx";
-import {cn} from "@utils/ui-utils.ts";
+import type {JSX} from "react";
+import {Link} from "react-router";
+import Icon from "@ui/icons/Icon";
+import {cn} from "@utils/ui-utils";
 
-function GrowSpineIcon({className}) {
+type Props = {
+    className?: string;
+}
+
+function GrowSpineIcon({className}: Props): JSX.Element {
     return (
         <span
             className={
@@ -17,7 +22,7 @@ function GrowSpineIcon({className}) {
     );
 }
 
-export default function FooterTop() {
+export default function FooterTop(): JSX.Element {
     return (
         <div
             className={"relative overflow-hidden border-y border-grey-15"}
@@ -50,5 +55,5 @@ export default function FooterTop() {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
