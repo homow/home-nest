@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link} from "react-router";
 import Icon from "@ui/icons/Icon";
 
 export default function TopTitleSections({title, text, link = null, linkText}) {

@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link} from "react-router";
 import Icon from "@ui/icons/Icon.tsx";
 
 export default function PropertyCard({img, title, description, features, price, propertyLink, className}) {
