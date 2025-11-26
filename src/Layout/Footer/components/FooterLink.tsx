@@ -1,12 +1,22 @@
-import {Link} from "react-router-dom";
-import Logo from "@ui/Logo.tsx";
-import Icon from "@ui/icons/Icon.tsx";
+import {Link} from "react-router";
+import Logo from "@ui/Logo";
+import Icon from "@ui/icons/Icon";
+import {JSX} from "react";
 
 function FooterLinkBox({linkData}) {
     return (
         <div>
-            <h6 className={"text-grey-60 mb-4 md:text-lg"}>{linkData.title}</h6>
-            <ul className={"flex flex-col gap-2 md:gap-2.5"}>
+            <h6
+                className={
+                    "text-grey-60 mb-4 md:text-lg"
+                }
+            >
+                {linkData.title}
+            </h6>
+
+            <ul
+                className={"flex flex-col gap-2 md:gap-2.5"}
+            >
                 {linkData.links && linkData.links.map((link, i) =>
                     <li key={i} className={"*:text-sm *:font-normal md:*:text-base"}>
                         {link.tagName === "Link" ? (
@@ -21,7 +31,7 @@ function FooterLinkBox({linkData}) {
     )
 }
 
-function FooterLinkInput() {
+function FooterLinkInput(): JSX.Element {
     return (
         <div>
             <div className={"flex flex-row items-center gap-2 mb-3"}>
