@@ -1,6 +1,6 @@
 import type {JSX} from "react";
 
-export default function FooterCopyright(): JSX.Element {
+export default function Copyright(): JSX.Element {
     return (
         <div
             className={"flex flex-col items-center justify-center gap-2 md:flex-row md:gap-10"}
