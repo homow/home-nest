@@ -1,8 +1,8 @@
 import {useState} from "react";
 import HeaderNav from "./HeaderNav";
 import ThemeSection from "./ThemeSection";
-import Overlay from "@ui/Overlay";
-import Logo from "@ui/Logo";
+import Overlay from "@ui/Overlay.tsx";
+import Logo from "@ui/Logo.tsx";
 import Icon from "@ui/icons/Icon.tsx";
 
 export default function HeaderBase() {
