@@ -1,65 +1,9 @@
-import {Link} from "react-router";
-import Logo from "@ui/Logo";
-import Icon from "@ui/icons/Icon";
-import {JSX} from "react";
+import type {JSX} from "react";
+import type {LinkData} from "../types/footer.types";
+import LinkBox from "../common/LinkBox";
+import LinkInput from "../common/LinkInput";
 
-function FooterLinkBox({linkData}) {
-    return (
-        <div>
-            <h6
-                className={
-                    "text-grey-60 mb-4 md:text-lg"
-                }
-            >
-                {linkData.title}
-            </h6>
-
-            <ul
-                className={"flex flex-col gap-2 md:gap-2.5"}
-            >
-                {linkData.links && linkData.links.map((link, i) =>
-                    <li key={i} className={"*:text-sm *:font-normal md:*:text-base"}>
-                        {link.tagName === "Link" ? (
-                            <Link to={link.url}>{link.text}</Link>
-                        ) : (
-                            <a target="_blank" href={link.url}>{link.text}</a>
-                        )}
-                    </li>
-                )}
-            </ul>
-        </div>
-    )
-}
-
-function FooterLinkInput(): JSX.Element {
-    return (
-        <div>
-            <div className={"flex flex-row items-center gap-2 mb-3"}>
-                <Logo className={"max-w-10"}/>
-            </div>
-            <form onSubmit={e => e.preventDefault()} className="xl:min-w-80">
-                <label className="group flex flex-row items-center gap-2 border border-grey-15 rounded-xl px-2 transition-all duration-300 focus-within:border-violet-600">
-
-                    <label htmlFor={"email"} className={"hidden"}></label>
-                    <input
-                        id="email"
-                        type="text"
-                        name="email"
-                        placeholder="ایمیل"
-                        autoComplete="email"
-                        className="flex-1 w-full outline-none pl-5 py-3 rounded-l-lg focus:border-violet-600 bg-transparent"
-                    />
-                    <Icon
-                        parentClassName={"max-w-max"}
-                        icon={"send"}
-                    />
-                </label>
-            </form>
-        </div>
-    )
-}
-
-const footerLinkData = [
+const footerLinkData: LinkData[] = [
     {
         title: "صفحه اصلی",
         links: [
@@ -92,15 +36,18 @@ const footerLinkData = [
     }
 ];
 
-export default function FooterLinks() {
+export default function FooterLinks(): JSX.Element {
     return (
         <div className={"container space-y-12 xl:flex flex-row-reverse items-start justify-between"}>
-            <FooterLinkInput/>
+            <LinkInput/>
 
             <div className={"grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-4 xl:gap-20"}>
                 {footerLinkData && (
                     footerLinkData.map(link =>
-                        <FooterLinkBox key={link.title} linkData={link}/>
+                        <LinkBox
+                            key={link.title}
+                            linkData={link}
+                        />
                     )
                 )}
             </div>
