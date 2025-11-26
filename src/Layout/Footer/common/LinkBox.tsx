@@ -21,11 +21,23 @@ export default function LinkBox({linkData}: Props): JSX.Element {
                 className={"flex flex-col gap-2 md:gap-2.5"}
             >
                 {linkData.links && linkData.links.map((link, i): JSX.Element =>
-                    <li key={i} className={"*:text-sm *:font-normal md:*:text-base"}>
+                    <li
+                        key={i}
+                        className={"*:text-sm *:font-normal md:*:text-base"}
+                    >
                         {link.tagName === "Link" ? (
-                            <Link to={link.url}>{link.text}</Link>
+                            <Link
+                                to={link.url}
+                            >
+                                {link.text}
+                            </Link>
                         ) : (
-                            <a target="_blank" href={link.url}>{link.text}</a>
+                            <a
+                                target="_blank"
+                                href={link.url}
+                            >
+                                {link.text}
+                            </a>
                         )}
                     </li>
                 )}
