@@ -6,7 +6,7 @@ type Props = {
     icon: string;
 }
 
-export default function FooterSocialMedia({link, icon}: Props): JSX.Element {
+export default function SocialMedia({link, icon}: Props): JSX.Element {
     return (
         <a
             href={link}
