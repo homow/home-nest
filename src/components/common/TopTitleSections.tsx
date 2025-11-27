@@ -9,7 +9,14 @@ type Props = {
     linkText?: string;
 }
 
-export default function TopTitleSections({title, text, link, linkText}: Props): JSX.Element {
+export default function TopTitleSections(
+    {
+        title,
+        text,
+        link,
+        linkText
+    }: Props): JSX.Element {
+
     return (
         <div
             className={"relative space-y-2"}
