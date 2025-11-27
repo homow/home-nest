@@ -35,7 +35,9 @@ export default function TopTitleSections(
             <h2>{title}</h2>
 
             {link ? (
-                <div className={"relative lg:flex items-start justify-between gap-4 mt-3"}>
+                <div
+                    className={"relative lg:flex items-start justify-between gap-4 mt-3"}
+                >
                     {/* text of title section */}
                     <p
                         className={"text-sm text-grey-60 lg:text-base"}
