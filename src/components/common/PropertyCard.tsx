@@ -1,7 +1,28 @@
+import type {JSX} from "react";
 import {Link} from "react-router";
-import Icon from "@ui/icons/Icon.tsx";
+import Icon from "@ui/icons/Icon";
 
-export default function PropertyCard({img, title, description, features, price, propertyLink, className}) {
+type Props = {
+    img: string;
+    title: string;
+    description: string;
+    features: [number, number, string];
+    price: string;
+    propertyLink: string;
+    className?: string;
+}
+
+export default function PropertyCard(
+    {
+        img,
+        title,
+        description,
+        features,
+        price,
+        propertyLink,
+        className
+    }: Props): JSX.Element {
+
     return (
         <div className={`max-w-128 border border-grey-15 rounded-xl p-6 space-y-4 ${className}`}>
             {/* image card */}
