@@ -1,8 +1,9 @@
+import type {JSX} from "react";
 import RightHeroSection from "./RightHeroSection";
 import LeftHeroSection from "./LeftHeroSection";
 import BottomHeroSection from "./BottomHeroSection";
 
-export default function HeroSection() {
+export default function HeroSection(): JSX.Element {
     return (
         <section
             id="hero-section"
