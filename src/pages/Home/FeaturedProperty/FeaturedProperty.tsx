@@ -1,9 +1,10 @@
+import type {JSX} from "react";
 import {Link} from "react-router";
-import TopTitleSections from "@/components/common/TopTitleSections";
-import PropertyCard from "@/components/common/PropertyCard";
+import TopTitleSections from "@components/common/TopTitleSections";
+import PropertyCard from "@components/common/PropertyCard";
 import Icon from "@ui/icons/Icon";
 
-function PaginationPropertyCards() {
+function PaginationPropertyCards(): JSX.Element {
     return (
         <div className={"flex flex-row items-center justify-between border-t border-grey-15 mt-7.5 pt-4"}>
 
@@ -42,7 +43,7 @@ function PaginationPropertyCards() {
     )
 }
 
-export default function FeaturedProperty() {
+export default function FeaturedProperty(): JSX.Element {
     return (
         <section id={"featured-property"} className={"container"}>
             {/* title section */}
