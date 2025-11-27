@@ -1,7 +1,15 @@
+import type {JSX} from "react";
 import {Link} from "react-router";
 import Icon from "@ui/icons/Icon";
 
-export default function TopTitleSections({title, text, link = null, linkText}) {
+type Props = {
+    title: string;
+    text: string;
+    link?: string;
+    linkText?: string;
+}
+
+export default function TopTitleSections({title, text, link, linkText}: Props): JSX.Element {
     return (
         <div
             className={"relative space-y-2"}
