@@ -1,6 +1,17 @@
+import type {JSX} from "react";
 import {Link} from "react-router";
 
-function LeftHeroSectionState({title, text, className = ""}) {
+type MainProps = {
+    className?: string;
+}
+
+interface Props extends MainProps {
+    title: string;
+    text: string;
+    className?: string;
+}
+
+function LeftHeroSectionState({title, text, className = ""}: Props): JSX.Element {
     return (
         <div className={`bg-grey-10 border border-grey-15 rounded-lg p-4 text-center sm:max-w-60 sm:text-start ${className}`}>
             <strong className={"text-2xl xl:text-3xl"}>{title}</strong>
@@ -9,7 +20,7 @@ function LeftHeroSectionState({title, text, className = ""}) {
     )
 }
 
-function LeftHeroSectionInfo() {
+function LeftHeroSectionInfo(): JSX.Element {
     return (
         <div className={"mb-10 xl:mb-15"}>
             <h1 className={"font-medium max-w-10/12 xs:max-w-8/12 sm:max-w-6/12 md:max-w-6/12 xl:max-w-125"}>
@@ -27,7 +38,7 @@ function LeftHeroSectionInfo() {
     )
 }
 
-export default function LeftHeroSection({className}) {
+export default function LeftHeroSection({className}: MainProps): JSX.Element {
     return (
         <div className={`container xl:ml-20 2xl:ml-40 ${className}`}>
             {/* info and title */}
