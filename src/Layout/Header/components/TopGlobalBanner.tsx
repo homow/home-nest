@@ -1,11 +1,12 @@
+import type {ReactNode} from "react";
 import {useState, useEffect} from "react";
-import Icon from "@ui/icons/Icon.tsx";
+import Icon from "@ui/icons/Icon";
 
-export default function TopGlobalBanner() {
-    const [visible, setVisible] = useState(true);
+export default function TopGlobalBanner(): ReactNode {
+    const [visible, setVisible] = useState<boolean>(true);
 
-    useEffect(() => {
-        const isDismissed = localStorage.getItem("topGlobalBannerVisible") === "false";
+    useEffect((): void => {
+        const isDismissed: boolean = localStorage.getItem("topGlobalBannerVisible") === "false";
 
         if (isDismissed) setVisible(false);
     }, []);
@@ -39,5 +40,5 @@ export default function TopGlobalBanner() {
                 </span>
             </div>
         </div>
-    )
-}
+    );
+};
