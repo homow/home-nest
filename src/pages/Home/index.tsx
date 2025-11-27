@@ -1,5 +1,5 @@
-import HeroSection from "./HeroSection/HeroSection.jsx";
-import FeaturedProperty from "./FeaturedProperty/FeaturedProperty.jsx";
+import HeroSection from "./HeroSection/HeroSection";
+import FeaturedProperty from "./FeaturedProperty/FeaturedProperty";
 import {useEffect} from "react";
 
 export default function Home() {
