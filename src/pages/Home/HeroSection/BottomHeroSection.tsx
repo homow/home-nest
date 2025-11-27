@@ -1,6 +1,12 @@
-import Icon from "@ui/icons/Icon.tsx";
+import type {JSX} from "react";
+import Icon from "@ui/icons/Icon";
 
-function BottomHeroSectionBox({text, icon}) {
+type Props = {
+    text: string;
+    icon: string;
+}
+
+function BottomHeroSectionBox({text, icon}: Props): JSX.Element {
     return (
         <div className={"relative bg-grey-10 rounded-custom border border-grey-15 text-center flex flex-col items-center py-5 px-3.5 text-sm md:text-base md:py-6 lg:py-7"}>
             <div className={"absolute right-4 top-4"}>
@@ -19,7 +25,7 @@ function BottomHeroSectionBox({text, icon}) {
     )
 }
 
-export default function BottomHeroSection() {
+export default function BottomHeroSection(): JSX.Element {
     return (
         <div className={"container grid grid-cols-2 gap-2.5 border border-grey-15 rounded-xl p-2.5 shadow-custom-no-blur md:grid-cols-4 md:max-w-none"}>
             <BottomHeroSectionBox text={"خونه رویایی‌تو پیدا کن"} icon={"purpleSun"}/>
