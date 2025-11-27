@@ -1,5 +1,5 @@
 import type {JSX} from "react";
-import type {LinkData} from "../types/footer.types";
+import type {LinkData} from "@/types/footer.types";
 import {Link} from "react-router";
 
 type Props = {

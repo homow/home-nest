@@ -1,5 +1,5 @@
 import type {JSX} from "react";
-import type {LinkData} from "../types/footer.types";
+import type {LinkData} from "@/types/footer.types";
 import LinkBox from "../common/LinkBox";
 import LinkInput from "../common/LinkInput";
 
