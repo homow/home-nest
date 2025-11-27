@@ -1,8 +1,15 @@
-import Icon from "@ui/icons/Icon.tsx";
+import type {JSX} from "react";
+import Icon from "@ui/icons/Icon";
 
-export default function RightHeroSection({className}) {
+type Props = {
+    className?: string;
+}
+
+export default function RightHeroSection({className}: Props): JSX.Element {
     return (
-        <div className={`relative container xl:p-0 xl:w-full ${className}`}>
+        <div
+            className={`relative container xl:p-0 xl:w-full ${className}`}
+        >
             {/* image and wave svg */}
             <div className={"relative bg-zinc-900 rounded-custom overflow-hidden border border-grey-15 max-w-200 mx-auto xl:max-w-230 xl:mx-0 xl:rounded-none"}>
 
