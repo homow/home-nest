@@ -1,16 +1,15 @@
+import type {JSX} from "react";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 import HeroSection from "./HeroSection/HeroSection";
 import FeaturedProperty from "./FeaturedProperty/FeaturedProperty";
-import {useEffect} from "react";
 
-export default function Home() {
-    useEffect(() => {
-        document.title = "صفحه اصلی | آشیانه";
-    }, [])
+export default function Home(): JSX.Element {
+    useDocumentTitle("صفحه اصلی | آشیانه");
 
     return (
         <>
             <HeroSection/>
             <FeaturedProperty/>
         </>
-    )
-}
+    );
+};
