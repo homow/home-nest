@@ -1,9 +1,8 @@
-import type {JSX} from "react";
-import type {NavigateFunction} from "react-router-dom";
-import {useNavigate} from "react-router-dom";
+import type {NavigateFunction} from "react-router";
+import {useNavigate} from "react-router";
 import Button from "@ui/Button";
 
-export default function NotFound(): JSX.Element {
+export default function NotFound() {
     const navigate: NavigateFunction = useNavigate();
     const hasBackPath: number = window.history.length;
 
