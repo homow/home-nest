@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router";
-import LazyWithSuspense from "@ui/suspense/LazyWithSuspense"
+import LazyWithSuspense from "@ui/lazy/LazyWithSuspense"
 import {BASE_PATH} from "@/config";
 import App from "@/App";
 
