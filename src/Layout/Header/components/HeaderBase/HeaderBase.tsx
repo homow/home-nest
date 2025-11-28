@@ -1,12 +1,12 @@
 import {useState} from "react";
 import HeaderNav from "./HeaderNav";
 import ThemeSection from "./ThemeSection";
-import Overlay from "@ui/Overlay.tsx";
-import Logo from "@ui/Logo.tsx";
-import Icon from "@ui/icons/Icon.tsx";
+import Overlay from "@ui/Overlay";
+import Logo from "@ui/Logo";
+import Icon from "@ui/icons/Icon";
 
 export default function HeaderBase() {
-    const [isOpenMenu, setIsOpenMenu] = useState(false);
+    const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
     return (
         <>
@@ -39,7 +39,7 @@ export default function HeaderBase() {
 
                     {/* toggle nav menu in mobile */}
                     <span
-                        onClick={() => setIsOpenMenu(!isOpenMenu)}
+                        onClick={(): void => setIsOpenMenu(!isOpenMenu)}
                         className={"cursor-pointer md:hidden"}>
                         <Icon
                             parentClassName={"inline"}
