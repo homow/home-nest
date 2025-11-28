@@ -1,17 +1,18 @@
-import type {JSX, RefObject} from "react";
+import type {RefObject} from "react";
 import {useEffect, useState} from "react";
 import Icon from "@ui/icons/Icon";
 import {cn} from "@utils/ui-utils";
 
 type Props = {
-    triggerRef: RefObject<HTMLDivElement>;
+    triggerRef: RefObject<HTMLDivElement | null>;
 }
 
-export default function ScrollUp({triggerRef}: Props): JSX.Element {
+export default function ScrollUp({triggerRef}: Props) {
     const [visible, setVisible] = useState<boolean>(false);
 
     useEffect((): (() => void) | undefined => {
-        const target: HTMLDivElement = triggerRef?.current;
+        const target: HTMLDivElement | null = triggerRef?.current;
+
         if (!target) return;
 
         const observer = new IntersectionObserver(

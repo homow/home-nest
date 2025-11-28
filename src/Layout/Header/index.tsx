@@ -1,10 +1,10 @@
 import {useRef} from "react";
-import ScrollUp from "@ui/ScrollUp.tsx";
+import ScrollUp from "@ui/ScrollUp";
 import TopGlobalBanner from "./components/TopGlobalBanner";
-import HeaderBase from "@/Layout/Header/components/HeaderBase/HeaderBase";
+import HeaderBase from "@/Layout/Header/components/HeaderBase";
 
 export default function Header() {
-    const refTrigger = useRef(null);
+    const refTrigger = useRef<HTMLDivElement>(null);
 
     return (
         <header>
