@@ -1,13 +1,24 @@
+import type {Dispatch, SetStateAction} from "react";
 import {NavLink} from "react-router";
-import Logo from "@ui/Logo.tsx";
-import {cn} from "@utils/ui-utils.ts";
+import Logo from "@ui/Logo";
+import {cn} from "@utils/ui-utils";
 
-export default function HeaderNav({openMenu, setOpenMenu}) {
+type Props = {
+    openMenu: boolean;
+    setOpenMenu: Dispatch<SetStateAction<boolean>>;
+}
+
+type NavLinkProps = {
+    isActive?: boolean;
+    isPending?: boolean;
+}
+
+export default function HeaderNav({openMenu, setOpenMenu}: Props) {
     // close menu after click to menu links
-    const handleCloseMenu = () => setOpenMenu(false);
+    const handleCloseMenu: () => void = (): void => setOpenMenu(false);
 
     // active style to links
-    const linkClass = ({isActive}) => cn("my-0.5 pr-2 py-3 block hover:max-md:bg-black/10 hover:max-md:dark:bg-white/5 active:max-md:bg-black/10 active:max-md:dark:bg-white/5 md:p-0", isActive && "text-violet-500 max-md:bg-black/10 max-md:dark:bg-white/5");
+    const linkClass = ({isActive}: NavLinkProps): string => cn("my-0.5 pr-2 py-3 block hover:max-md:bg-black/10 hover:max-md:dark:bg-white/5 active:max-md:bg-black/10 active:max-md:dark:bg-white/5 md:p-0", isActive && "text-violet-500 max-md:bg-black/10 max-md:dark:bg-white/5");
 
     return (
         <ul
