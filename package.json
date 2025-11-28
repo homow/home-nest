@@ -15,7 +15,9 @@
     "publish-all": "npm run update-main && npm run build-deploy"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
     "axios": "^1.13.2",
+    "babel-plugin-react-compiler": "^1.0.0",
     "clsx": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -28,7 +30,6 @@
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react-swc": "^4.2.2",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

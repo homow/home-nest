@@ -1,5 +1,5 @@
 import {type ConfigEnv, defineConfig, loadEnv} from 'vite';
-import react from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react';
 import tailwindcss from "@tailwindcss/vite";
 import path, {resolve} from 'path';
 import {fileURLToPath} from "url";
@@ -64,7 +64,13 @@ export default defineConfig(({mode}: ConfigEnv) => {
             }
         },
         plugins: [
-            react(),
+            react(
+                {
+                    babel: {
+                        plugins: ["babel-plugin-react-compiler"]
+                    }
+                }
+            ),
             tailwindcss(),
             checker({
                 typescript: {
