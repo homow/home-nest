@@ -1,11 +1,11 @@
 import {useState} from "react";
-import Icon from "@ui/icons/Icon.tsx";
+import Icon from "@ui/icons/Icon";
 
 export default function ThemeSection() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") === "dark" ? "dark" : "light");
 
-    const changeTheme = () => {
-        const newTheme = theme === "dark" ? "light" : "dark";
+    const changeTheme: () => void = (): void => {
+        const newTheme: "dark" | "light" = theme === "dark" ? "light" : "dark";
         setTheme(newTheme);
         document.documentElement.classList.toggle("dark", newTheme === "dark");
         localStorage.setItem("theme", newTheme);
@@ -21,5 +21,5 @@ export default function ThemeSection() {
                 icon={theme === "dark" ? "sun" : "moon"}
             />
         </div>
-    )
-}
+    );
+};
