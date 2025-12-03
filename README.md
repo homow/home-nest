@@ -30,7 +30,6 @@ All routes and static assets are configured to load correctly under this path.
 
 - Dual theme support: dark and light modes with dynamic switching
 - Clean component architecture with consistent naming conventions
-- `BrowserRouter` configured with `basename` for accurate routing
 - Optimized build process using Vite for performance
 - Precise setup of favicon, logo, and static assets for production
 
