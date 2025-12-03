@@ -8,13 +8,14 @@ Original UI design sourced directly from [Figma](https://www.figma.com/design/zp
 
 ### ⚙️ Tech Stack
 
-| Tool             | Version     |
-|------------------|-------------|
-| React            | 19          |
-| React Router     | 7           |
-| Tailwind CSS     | 4           |
-| ESLint           | 9           |
-| Vite             | 7           |
+| Tool         | Version |
+|--------------|---------|
+| TypeScript   | 5       |
+| React        | 19      |
+| React Router | 7       |
+| Tailwind CSS | 4       |
+| ESLint       | 9       |
+| Vite         | 7       |
 
 ---
 
