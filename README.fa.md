@@ -8,13 +8,14 @@
 
 ### ⚙️ Tech Stack
 
-| ابزار            | نسخه       |
-|------------------|------------|
-| React            | 19         |
-| React Router     | 7          |
-| Tailwind CSS     | 4          |
-| ESLint           | 9          |
-| Vite             | 7          |
+| ابزار        | نسخه |
+|--------------|------|
+| TypeScript   | 5    |
+| React        | 19   |
+| React Router | 7    |
+| Tailwind CSS | 4    |
+| ESLint       | 9    |
+| Vite         | 7    |
 
 ---
 
