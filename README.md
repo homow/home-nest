@@ -1,7 +1,7 @@
 ## 🏠 HomeNest
 
 **A real estate showcase site with dark and light themes, developed by [Homow](https://card.homow.ir)**  
-Built with architectural precision, structured component logic, and deployed via [GitHub Pages](https://homow.github.io/home-nest/)  
+Built with architectural precision, structured component logic, TypeSafe and deployed via [GitHub Pages](https://homow.github.io/home-nest/)  
 Original UI design sourced directly from [Figma](https://www.figma.com/design/zpwtuKCAGYyYZn0DMDNImy/Real-Estate-Business-Website-UI-Template---Dark-Theme-%7C-Produce-UI--Community-?node-id=139-6238&t=PAe85chdY6gZx8MK-0) — used as-is without modification.
 
 ---
