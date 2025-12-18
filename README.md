@@ -1,4 +1,4 @@
-## 🏠 HomeNest
+## 🏠 HomeNest-react
 
 **A real estate showcase site with dark and light themes, developed by [Homow](https://card.homow.ir)**  
 Built with architectural precision, structured component logic, TypeSafe and deployed via [GitHub Pages](https://homow.github.io/home-nest/)  
