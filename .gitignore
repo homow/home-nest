@@ -32,7 +32,7 @@ out/
 build/
 .next/cache/
 
-# React / Vite (اگر روزی استفاده شد)
+# React / Vite
 dist/
 .cache/
 
@@ -66,7 +66,7 @@ temp/
 # Vercel
 .vercel/
 
-# Turbo / Monorepo (اگر استفاده شد)
+# Turbo / Monorepo
 .turbo/
 
 # Storybook
