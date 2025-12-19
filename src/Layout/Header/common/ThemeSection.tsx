@@ -1,8 +1,15 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Icon from "@ui/icons/Icon";
 
 export default function ThemeSection() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") === "dark" ? "dark" : "light");
+
+    useEffect(() => {
+        const localTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const resolvedTheme = localTheme === "dark" || (!localTheme && prefersDark) ? "dark" : "light";
+        setTheme(resolvedTheme);
+    }, []);
 
     const changeTheme: () => void = (): void => {
         const newTheme: "dark" | "light" = theme === "dark" ? "light" : "dark";
